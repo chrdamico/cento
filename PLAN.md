@@ -207,8 +207,11 @@ of the gate carried into the UI. `bin/serve.sh` = build + `http.server`.
 ### Phase 5 — later (not v1)
 Daily generation timer (systemd user unit, pattern in blog-pipeline
 `watcher/`), more authors, a curator that judges each author's pool *as a set*
-(port `prompts/curate.md`), theme rotation, public deployment (static hosting
-— the site is just files), per-jurisdiction public-domain cutoffs
+(port `prompts/curate.md`), theme rotation, public deployment — **GitHub Pages,
+free**: the site is static files, `corpus/` never leaves the laptop, generation
+stays local on the timer (subscription `claude -p` doesn't transplant to CI
+without an API key) and each pushed text redeploys the site — plus
+per-jurisdiction public-domain cutoffs
 (life+70 EU / pre-1930 US), translations (translator copyright is the trap:
 the *translation* must be PD, not just the author).
 
