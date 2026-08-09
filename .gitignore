@@ -1,0 +1,12 @@
+# refetchable / large
+corpus/
+
+# scratch + logs
+work/
+logs/
+
+# built site (texts/ — the gated products — ARE committed; the render is not)
+site/out/
+
+__pycache__/
+*.pyc

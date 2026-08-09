@@ -1,0 +1,32 @@
+# Per-author configuration. Read by fetch_corpus.sh (which Gutenberg books),
+# workingset.py (themes), and generate.sh (which prompt).
+#
+# gutenberg ids: VERIFY at fetch time — the fetch script must grep the
+# downloaded title page and fail loudly on a mismatch, never trust these
+# numbers blindly.
+
+poe:
+  name: Edgar Allan Poe
+  kind: story                    # -> prompts/stitch-story.md
+  gutenberg:                     # The Works of E. A. Poe, Raven Edition
+    - 2147                       # vol 1 (tales)
+    - 2148                       # vol 2 (tales)
+    - 2149                       # vol 3 (tales)
+  themes:
+    - the sea at night
+    - a house that remembers
+    - premature burial
+    - the hour after midnight
+    - a sound that should not be there
+
+emerson:
+  name: Ralph Waldo Emerson
+  kind: essay                    # -> prompts/stitch-essay.md
+  gutenberg:
+    - 16643                      # Essays by Ralph Waldo Emerson (First & Second Series) — VERIFY
+  themes:
+    - self-trust
+    - compensation
+    - the uses of adversity
+    - solitude and society
+    - the courage to be misunderstood
