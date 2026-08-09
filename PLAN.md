@@ -200,9 +200,20 @@ of Usher, ¶12"* with a Gutenberg link. **Glue is visibly marked** (dotted
 underline, tooltip says "connective — not the author's words") — the honesty
 of the gate carried into the UI. `bin/serve.sh` = build + `http.server`.
 
+**The site explains itself.** The concept is the product, so the explanation
+lives on the website, not in the repo: the index page opens with a short
+manifesto — what a cento is (the patchwork form, Ausonius and Proba stitching
+Virgil), the promise (*the author wrote every word; the machine only found the
+arrangement*), and how it's kept (every sentence mechanically verified against
+the corpus; connectives marked; hover any sentence to see where it's from).
+A few sentences, written once as `site/about.md` and rendered onto the index —
+plus one line on every text page pointing back to it. A visitor who reads
+nothing else must still leave knowing this is arrangement, not imitation.
+
 - **Accept when:** `bin/serve.sh` → localhost page, hover works on every
   sentence, glue distinguishable, no JS required (or minimal, for tooltip
-  positioning only).
+  positioning only); the index explains the concept well enough that a
+  first-time visitor can answer "did an AI write this?" correctly.
 
 ### Phase 5 — later (not v1)
 Daily generation timer (systemd user unit, pattern in blog-pipeline
