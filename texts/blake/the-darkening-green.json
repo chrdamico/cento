@@ -1,0 +1,313 @@
+{
+ "author": "blake",
+ "author_name": "William Blake",
+ "kind": "poem",
+ "title": "The Darkening Green",
+ "theme": "innocence and experience",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 28,
+  "TWEAKED": 0,
+  "GLUE": 0,
+  "NEW": 0
+ },
+ "works": [
+  "Introduction",
+  "Introduction (2)",
+  "London",
+  "Nurse’s Song",
+  "Nurse’s Song (2)",
+  "The Echoing Green",
+  "The Garden of Love",
+  "The Lamb",
+  "The Tiger",
+  "The Voice of the Ancient Bard"
+ ],
+ "sentences": [
+  {
+   "text": "Piping down the valleys wild,",
+   "class": "VERBATIM",
+   "src": "blake/introduction/p001/s001",
+   "work": "Introduction",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "Piping songs of pleasant glee,",
+   "class": "VERBATIM",
+   "src": "blake/introduction/p001/s002",
+   "work": "Introduction",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "When voices of children are heard on the green,",
+   "class": "VERBATIM",
+   "src": "blake/nurse-s-song/p001/s001",
+   "work": "Nurse’s Song",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "And laughing is heard on the hill,",
+   "class": "VERBATIM",
+   "src": "blake/nurse-s-song/p001/s002",
+   "work": "Nurse’s Song",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Little lamb, who made thee?",
+   "class": "VERBATIM",
+   "src": "blake/the-lamb/p001/s001",
+   "work": "The Lamb",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "I a child, and thou a lamb,",
+   "class": "VERBATIM",
+   "src": "blake/the-lamb/p002/s007",
+   "work": "The Lamb",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "We are callèd by His name.",
+   "class": "VERBATIM",
+   "src": "blake/the-lamb/p002/s008",
+   "work": "The Lamb",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "The sun does descend,",
+   "class": "VERBATIM",
+   "src": "blake/the-echoing-green/p003/s003",
+   "work": "The Echoing Green",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "And our sports have an end.",
+   "class": "VERBATIM",
+   "src": "blake/the-echoing-green/p003/s004",
+   "work": "The Echoing Green",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "The days of my youth rise fresh in my mind,",
+   "class": "VERBATIM",
+   "src": "blake/nurse-s-song-2/p001/s003",
+   "work": "Nurse’s Song (2)",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Your spring and your day are wasted in play,",
+   "class": "VERBATIM",
+   "src": "blake/nurse-s-song-2/p002/s003",
+   "work": "Nurse’s Song (2)",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "And your winter and night in disguise.",
+   "class": "VERBATIM",
+   "src": "blake/nurse-s-song-2/p002/s004",
+   "work": "Nurse’s Song (2)",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "I wander through each chartered street,",
+   "class": "VERBATIM",
+   "src": "blake/london/p001/s001",
+   "work": "London",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "A mark in every face I meet,",
+   "class": "VERBATIM",
+   "src": "blake/london/p001/s003",
+   "work": "London",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Marks of weakness, marks of woe.",
+   "class": "VERBATIM",
+   "src": "blake/london/p001/s004",
+   "work": "London",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "I went to the Garden of Love,",
+   "class": "VERBATIM",
+   "src": "blake/the-garden-of-love/p001/s001",
+   "work": "The Garden of Love",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "And saw what I never had seen;",
+   "class": "VERBATIM",
+   "src": "blake/the-garden-of-love/p001/s002",
+   "work": "The Garden of Love",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "And I saw it was filled with graves,",
+   "class": "VERBATIM",
+   "src": "blake/the-garden-of-love/p003/s001",
+   "work": "The Garden of Love",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "And tombstones where flowers should be;",
+   "class": "VERBATIM",
+   "src": "blake/the-garden-of-love/p003/s002",
+   "work": "The Garden of Love",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "The mind-forged manacles I hear:",
+   "class": "VERBATIM",
+   "src": "blake/london/p002/s004",
+   "work": "London",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Tiger, tiger, burning bright",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p001/s001",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "In the forests of the night,",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p001/s002",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Did He who made the lamb make thee?",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p005/s004",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Hear the voice of the Bard,",
+   "class": "VERBATIM",
+   "src": "blake/introduction-2/p001/s001",
+   "work": "Introduction (2)",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "Who present, past, and future, sees;",
+   "class": "VERBATIM",
+   "src": "blake/introduction-2/p001/s002",
+   "work": "Introduction (2)",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Youth of delight! come hither",
+   "class": "VERBATIM",
+   "src": "blake/the-voice-of-the-ancient-bard/p001/s001",
+   "work": "The Voice of the Ancient Bard",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "And see the opening morn,",
+   "class": "VERBATIM",
+   "src": "blake/the-voice-of-the-ancient-bard/p001/s002",
+   "work": "The Voice of the Ancient Bard",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Image of Truth new-born.",
+   "class": "VERBATIM",
+   "src": "blake/the-voice-of-the-ancient-bard/p001/s003",
+   "work": "The Voice of the Ancient Bard",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  }
+ ]
+}

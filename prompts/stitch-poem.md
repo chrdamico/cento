@@ -35,8 +35,9 @@ The site's promise to its readers is that the poet wrote every word.
 
 ## What a stitched poem can be
 
-- **One voice.** This poet's "I" is large and consistent — keep it. Drop
-  lines whose pronouns or tenses fight the poem around them.
+- **One voice.** Choose the register the corpus's lines share and keep it.
+  Drop lines whose pronouns, tenses, or addressees fight the poem around
+  them.
 - **An arc, not an anthology.** The poem should move: an opening address, a
   widening, a turn, an ending that lands. Do not sample the corpus — build
   one thing.

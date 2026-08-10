@@ -382,11 +382,126 @@ def segment_verse(author, gid):
     return records, counts
 
 
+ROMAN_ALONE = re.compile(r"^[IVXLC]+\.$")
+DICKINSON_SECTION = re.compile(r"^[IVX]+\.\s+([A-Z][A-Z ]+)\.$")
+BLAKE_SECTION = re.compile(r"^SONGS OF (INNOCENCE|EXPERIENCE)$")
+BRACKET_LINE = re.compile(r"^\[")
+
+
+def _flush_verse_records(author, gid, poems):
+    records, counts = [], {}
+    for title, stanzas in poems:
+        para_no = 0
+        for stanza in stanzas:
+            para_no += 1
+            for si, line in enumerate(stanza, 1):
+                if not any(c.isalpha() for c in line):
+                    continue
+                records.append({
+                    "id": f"{author}/{slugify(title)}/p{para_no:03d}/s{si:03d}",
+                    "work": title,
+                    "work_id": f"pg{gid}",
+                    "section": None,
+                    "para": para_no,
+                    "sent": si,
+                    "text": line,
+                    "norm": norm(line),
+                    "gutenberg_url": f"https://www.gutenberg.org/ebooks/{gid}",
+                })
+                counts[title] = counts.get(title, 0) + 1
+    return records, counts
+
+
+def segment_verse_flush(author, gid, mode):
+    """kind: poem, flush-left shape (Dickinson #12242, Blake #1934): verse
+    lines start at column 0 (indented lines are the poet's own alternation,
+    NOT wraps — never joined). Dickinson delimits poems with bare roman
+    numerals plus an optional editor's ALL-CAPS title (untitled poems take
+    their first line as title, the standard convention); Blake delimits with
+    ALL-CAPS poem titles under SONGS OF INNOCENCE/EXPERIENCE section heads.
+    Everything before the first section heading (prefaces, transcriber's
+    facsimile) is front matter and skipped; bracketed editor notes too."""
+    lines = book_lines(os.path.join(RAW, author, f"pg{gid}.txt"))
+    started = False
+    collecting = False             # inside a poem
+    title = None                   # None while awaiting title/first line
+    seen_titles = {}
+    poems = []                     # [(title, [stanza, ...])]
+    stanzas, cur = [], []
+    in_bracket = False
+
+    def close_poem():
+        nonlocal title, stanzas, cur, collecting
+        close_stanza()
+        if title and stanzas:
+            n = seen_titles.get(title, 0) + 1
+            seen_titles[title] = n
+            poems.append((title if n == 1 else f"{title} ({n})", stanzas))
+        title, stanzas, collecting = None, [], False
+
+    def close_stanza():
+        nonlocal cur, stanzas
+        if cur:
+            stanzas.append(cur)
+        cur = []
+
+    for raw in lines:
+        text = raw.strip()
+        if in_bracket:
+            if text.endswith("]"):
+                in_bracket = False
+            continue
+        if not text:
+            close_stanza()
+            continue
+        if BRACKET_LINE.match(text):
+            if not text.endswith("]"):
+                in_bracket = True
+            continue
+        section_re = DICKINSON_SECTION if mode == "dickinson" else BLAKE_SECTION
+        if section_re.match(text):
+            close_poem()
+            started = True
+            if mode == "blake":
+                collecting = False
+            continue
+        if not started:
+            continue
+        if mode == "dickinson" and ROMAN_ALONE.match(text):
+            close_poem()
+            collecting = True
+            continue
+        if is_capsline(text):
+            if collecting and title is None and not cur and not stanzas:
+                title = titlecase(text)    # editor's title right after marker
+            else:
+                close_poem()               # PREFACE / POEMS restart / new Blake poem
+                if mode == "blake":
+                    collecting, title = True, titlecase(text)
+            continue
+        if not collecting:
+            continue
+        line = clean(text)
+        if title is None:
+            title = line.rstrip(",;:.!?- ")
+        cur.append(line)
+    close_poem()
+    return _flush_verse_records(author, gid, poems)
+
+
 def main():
     os.makedirs(INDEX, exist_ok=True)
     cfg = authors_mod.load()
+    verse_modes = {12242: "dickinson", 1934: "blake"}
     for author, meta in cfg.items():
-        segment = segment_verse if meta["kind"] == "poem" else segment_book
+        if meta["kind"] == "poem":
+            def segment(author, gid):
+                mode = verse_modes.get(gid)
+                if mode:
+                    return segment_verse_flush(author, gid, mode)
+                return segment_verse(author, gid)
+        else:
+            segment = segment_book
         all_records, all_counts = [], {}
         for gid in meta["gutenberg"]:
             recs, counts = segment(author, gid)

@@ -1,0 +1,370 @@
+{
+ "author": "dickinson",
+ "author_name": "Emily Dickinson",
+ "kind": "poem",
+ "title": "That Waylaying Light",
+ "theme": "a certain slant of light",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 34,
+  "TWEAKED": 0,
+  "GLUE": 0,
+  "NEW": 0
+ },
+ "works": [
+  "A light exists in spring",
+  "As imperceptibly as grief",
+  "Dying",
+  "Presentiment is that long shadow on the lawn",
+  "The Soul's Storm",
+  "The farthest thunder that I heard",
+  "There's a certain slant of light"
+ ],
+ "sentences": [
+  {
+   "text": "There's a certain slant of light,",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p001/s001",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "On winter afternoons,",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p001/s002",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "A color stands abroad",
+   "class": "VERBATIM",
+   "src": "dickinson/a-light-exists-in-spring/p002/s001",
+   "work": "A light exists in spring",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "On solitary hills",
+   "class": "VERBATIM",
+   "src": "dickinson/a-light-exists-in-spring/p002/s002",
+   "work": "A light exists in spring",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "That science cannot overtake,",
+   "class": "VERBATIM",
+   "src": "dickinson/a-light-exists-in-spring/p002/s003",
+   "work": "A light exists in spring",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "It waits upon the lawn;",
+   "class": "VERBATIM",
+   "src": "dickinson/a-light-exists-in-spring/p003/s001",
+   "work": "A light exists in spring",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "It shows the furthest tree",
+   "class": "VERBATIM",
+   "src": "dickinson/a-light-exists-in-spring/p003/s002",
+   "work": "A light exists in spring",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "It almost speaks to me.",
+   "class": "VERBATIM",
+   "src": "dickinson/a-light-exists-in-spring/p003/s004",
+   "work": "A light exists in spring",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Heavenly hurt it gives us;",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p002/s001",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "We can find no scar,",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p002/s002",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "None may teach it anything,",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p003/s001",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "But internal difference",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p002/s003",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Where the meanings are.",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p002/s004",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "'T is the seal, despair, --",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p003/s002",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "An imperial affliction",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p003/s003",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Sent us of the air.",
+   "class": "VERBATIM",
+   "src": "dickinson/there-s-a-certain-slant-of-light/p003/s004",
+   "work": "There's a certain slant of light",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "It struck me every day",
+   "class": "VERBATIM",
+   "src": "dickinson/the-soul-s-storm/p001/s001",
+   "work": "The Soul's Storm",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "The lightning was as new",
+   "class": "VERBATIM",
+   "src": "dickinson/the-soul-s-storm/p001/s002",
+   "work": "The Soul's Storm",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "As if the cloud that instant slit",
+   "class": "VERBATIM",
+   "src": "dickinson/the-soul-s-storm/p001/s003",
+   "work": "The Soul's Storm",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "It burned me in the night,",
+   "class": "VERBATIM",
+   "src": "dickinson/the-soul-s-storm/p002/s001",
+   "work": "The Soul's Storm",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "It blistered in my dream;",
+   "class": "VERBATIM",
+   "src": "dickinson/the-soul-s-storm/p002/s002",
+   "work": "The Soul's Storm",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "It sickened fresh upon my sight",
+   "class": "VERBATIM",
+   "src": "dickinson/the-soul-s-storm/p002/s003",
+   "work": "The Soul's Storm",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "And every clamor bright",
+   "class": "VERBATIM",
+   "src": "dickinson/the-farthest-thunder-that-i-heard/p001/s014",
+   "work": "The farthest thunder that I heard",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Is but the gleam concomitant",
+   "class": "VERBATIM",
+   "src": "dickinson/the-farthest-thunder-that-i-heard/p001/s015",
+   "work": "The farthest thunder that I heard",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Of that waylaying light.",
+   "class": "VERBATIM",
+   "src": "dickinson/the-farthest-thunder-that-i-heard/p001/s016",
+   "work": "The farthest thunder that I heard",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Presentiment is that long shadow on the lawn",
+   "class": "VERBATIM",
+   "src": "dickinson/presentiment-is-that-long-shadow-on-the-lawn/p001/s001",
+   "work": "Presentiment is that long shadow on the lawn",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "Indicative that suns go down;",
+   "class": "VERBATIM",
+   "src": "dickinson/presentiment-is-that-long-shadow-on-the-lawn/p001/s002",
+   "work": "Presentiment is that long shadow on the lawn",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "How well I knew the light before!",
+   "class": "VERBATIM",
+   "src": "dickinson/dying/p004/s001",
+   "work": "Dying",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "I could not see it now.",
+   "class": "VERBATIM",
+   "src": "dickinson/dying/p004/s002",
+   "work": "Dying",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "As imperceptibly as grief",
+   "class": "VERBATIM",
+   "src": "dickinson/as-imperceptibly-as-grief/p001/s001",
+   "work": "As imperceptibly as grief",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "The summer lapsed away, --",
+   "class": "VERBATIM",
+   "src": "dickinson/as-imperceptibly-as-grief/p001/s002",
+   "work": "As imperceptibly as grief",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "And thus, without a wing,",
+   "class": "VERBATIM",
+   "src": "dickinson/as-imperceptibly-as-grief/p004/s001",
+   "work": "As imperceptibly as grief",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Our summer made her light escape",
+   "class": "VERBATIM",
+   "src": "dickinson/as-imperceptibly-as-grief/p004/s003",
+   "work": "As imperceptibly as grief",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Into the beautiful.",
+   "class": "VERBATIM",
+   "src": "dickinson/as-imperceptibly-as-grief/p004/s004",
+   "work": "As imperceptibly as grief",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  }
+ ]
+}

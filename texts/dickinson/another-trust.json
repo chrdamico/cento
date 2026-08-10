@@ -1,0 +1,243 @@
+{
+ "author": "dickinson",
+ "author_name": "Emily Dickinson",
+ "kind": "poem",
+ "title": "Another Trust",
+ "theme": "death and immortality",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 21,
+  "TWEAKED": 0,
+  "GLUE": 0,
+  "NEW": 0
+ },
+ "works": [
+  "Afraid? Of whom am I afraid",
+  "Death is a dialogue between",
+  "Numen Lumen",
+  "Setting Sail",
+  "The Chariot",
+  "This world is not conclusion"
+ ],
+ "sentences": [
+  {
+   "text": "Because I could not stop for Death,",
+   "class": "VERBATIM",
+   "src": "dickinson/the-chariot/p001/s001",
+   "work": "The Chariot",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "He kindly stopped for me;",
+   "class": "VERBATIM",
+   "src": "dickinson/the-chariot/p001/s002",
+   "work": "The Chariot",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "We slowly drove, he knew no haste,",
+   "class": "VERBATIM",
+   "src": "dickinson/the-chariot/p002/s001",
+   "work": "The Chariot",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "We passed the fields of gazing grain,",
+   "class": "VERBATIM",
+   "src": "dickinson/the-chariot/p003/s003",
+   "work": "The Chariot",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "We passed the setting sun.",
+   "class": "VERBATIM",
+   "src": "dickinson/the-chariot/p003/s004",
+   "work": "The Chariot",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "\"Dissolve,\" says Death. The Spirit, \"Sir,",
+   "class": "VERBATIM",
+   "src": "dickinson/death-is-a-dialogue-between/p001/s003",
+   "work": "Death is a dialogue between",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "I have another trust.\"",
+   "class": "VERBATIM",
+   "src": "dickinson/death-is-a-dialogue-between/p001/s004",
+   "work": "Death is a dialogue between",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "The Spirit turns away,",
+   "class": "VERBATIM",
+   "src": "dickinson/death-is-a-dialogue-between/p002/s002",
+   "work": "Death is a dialogue between",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Just laying off, for evidence,",
+   "class": "VERBATIM",
+   "src": "dickinson/death-is-a-dialogue-between/p002/s003",
+   "work": "Death is a dialogue between",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "An overcoat of clay.",
+   "class": "VERBATIM",
+   "src": "dickinson/death-is-a-dialogue-between/p002/s004",
+   "work": "Death is a dialogue between",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Afraid? Of whom am I afraid?",
+   "class": "VERBATIM",
+   "src": "dickinson/afraid-of-whom-am-i-afraid/p001/s001",
+   "work": "Afraid? Of whom am I afraid",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "Not death; for who is he?",
+   "class": "VERBATIM",
+   "src": "dickinson/afraid-of-whom-am-i-afraid/p001/s002",
+   "work": "Afraid? Of whom am I afraid",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "This world is not conclusion;",
+   "class": "VERBATIM",
+   "src": "dickinson/this-world-is-not-conclusion/p001/s001",
+   "work": "This world is not conclusion",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "A sequel stands beyond,",
+   "class": "VERBATIM",
+   "src": "dickinson/this-world-is-not-conclusion/p001/s002",
+   "work": "This world is not conclusion",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Exultation is the going",
+   "class": "VERBATIM",
+   "src": "dickinson/setting-sail/p001/s001",
+   "work": "Setting Sail",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "Of an inland soul to sea, --",
+   "class": "VERBATIM",
+   "src": "dickinson/setting-sail/p001/s002",
+   "work": "Setting Sail",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Into deep eternity!",
+   "class": "VERBATIM",
+   "src": "dickinson/setting-sail/p001/s004",
+   "work": "Setting Sail",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "I stand alive to-day",
+   "class": "VERBATIM",
+   "src": "dickinson/numen-lumen/p003/s002",
+   "work": "Numen Lumen",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242",
+   "pbreak": true
+  },
+  {
+   "text": "To witness to the certainty",
+   "class": "VERBATIM",
+   "src": "dickinson/numen-lumen/p003/s003",
+   "work": "Numen Lumen",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Of immortality",
+   "class": "FREE"
+  },
+  {
+   "text": "That life like this is endless,",
+   "class": "VERBATIM",
+   "src": "dickinson/numen-lumen/p004/s003",
+   "work": "Numen Lumen",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  },
+  {
+   "text": "Be judgment what it may.",
+   "class": "VERBATIM",
+   "src": "dickinson/numen-lumen/p004/s004",
+   "work": "Numen Lumen",
+   "work_id": "pg12242",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/12242"
+  }
+ ]
+}

@@ -1,0 +1,268 @@
+{
+ "author": "blake",
+ "author_name": "William Blake",
+ "kind": "poem",
+ "title": "The Fire and the Fold",
+ "theme": "the lamb and the tyger",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 24,
+  "TWEAKED": 0,
+  "GLUE": 0,
+  "NEW": 0
+ },
+ "works": [
+  "A Divine Image",
+  "Night",
+  "The Lamb",
+  "The Tiger"
+ ],
+ "sentences": [
+  {
+   "text": "Little lamb, who made thee?",
+   "class": "VERBATIM",
+   "src": "blake/the-lamb/p001/s001",
+   "work": "The Lamb",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "Gave thee clothing of delight,",
+   "class": "VERBATIM",
+   "src": "blake/the-lamb/p001/s005",
+   "work": "The Lamb",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Softest clothing, woolly, bright;",
+   "class": "VERBATIM",
+   "src": "blake/the-lamb/p001/s006",
+   "work": "The Lamb",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "He is meek, and He is mild,",
+   "class": "VERBATIM",
+   "src": "blake/the-lamb/p002/s005",
+   "work": "The Lamb",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Tiger, tiger, burning bright",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p001/s001",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "In the forests of the night,",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p001/s002",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "In what distant deeps or skies",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p002/s001",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Burnt the fire of thine eyes?",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p002/s002",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "What the hammer? what the chain?",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p004/s001",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "In what furnace was thy brain?",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p004/s002",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "The human dress is forgèd iron,",
+   "class": "VERBATIM",
+   "src": "blake/a-divine-image/p002/s001",
+   "work": "A Divine Image",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "The human form a fiery forge,",
+   "class": "VERBATIM",
+   "src": "blake/a-divine-image/p002/s002",
+   "work": "A Divine Image",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "When wolves and tigers howl for prey,",
+   "class": "VERBATIM",
+   "src": "blake/night/p004/s001",
+   "work": "Night",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "They pitying stand and weep;",
+   "class": "VERBATIM",
+   "src": "blake/night/p004/s002",
+   "work": "Night",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Did He smile His work to see?",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p005/s003",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Did He who made the lamb make thee?",
+   "class": "VERBATIM",
+   "src": "blake/the-tiger/p005/s004",
+   "work": "The Tiger",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "And there the lion’s ruddy eyes",
+   "class": "VERBATIM",
+   "src": "blake/night/p005/s001",
+   "work": "Night",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "Shall flow with tears of gold:",
+   "class": "VERBATIM",
+   "src": "blake/night/p005/s002",
+   "work": "Night",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "And walking round the fold:",
+   "class": "VERBATIM",
+   "src": "blake/night/p005/s004",
+   "work": "Night",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "‘And now beside thee, bleating lamb,",
+   "class": "VERBATIM",
+   "src": "blake/night/p006/s001",
+   "work": "Night",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 6,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "I can lie down and sleep,",
+   "class": "VERBATIM",
+   "src": "blake/night/p006/s002",
+   "work": "Night",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 6,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Or think on Him who bore thy name,",
+   "class": "VERBATIM",
+   "src": "blake/night/p006/s003",
+   "work": "Night",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 6,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  },
+  {
+   "text": "Little lamb, God bless thee!",
+   "class": "VERBATIM",
+   "src": "blake/the-lamb/p002/s009",
+   "work": "The Lamb",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934",
+   "pbreak": true
+  },
+  {
+   "text": "Little lamb, God bless thee!",
+   "class": "VERBATIM",
+   "src": "blake/the-lamb/p002/s009",
+   "work": "The Lamb",
+   "work_id": "pg1934",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1934"
+  }
+ ]
+}

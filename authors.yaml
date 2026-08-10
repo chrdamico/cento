@@ -46,6 +46,30 @@ whitman:
     - the city and the crowd
     - death and the grass
 
+dickinson:
+  name: Emily Dickinson
+  kind: poem
+  gutenberg:
+    - 12242                      # Poems, Three Series, Complete (Todd/Higginson text, PD)
+  themes:
+    - death and immortality
+    - a certain slant of light
+    - the bee and the summer
+    - the soul and its society
+    - hope and despair
+
+blake:
+  name: William Blake
+  kind: poem
+  gutenberg:
+    - 1934                       # Songs of Innocence and of Experience
+  themes:
+    - innocence and experience
+    - the lamb and the tyger
+    - the garden of love
+    - london and its chains
+    - joy and sorrow woven
+
 emerson:
   name: Ralph Waldo Emerson
   kind: essay                    # -> prompts/stitch-essay.md
