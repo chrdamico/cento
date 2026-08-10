@@ -320,8 +320,8 @@ def archive_page(all_texts, has_card):
             f'<li data-search="{esc(haystack)}">'
             f'<a href="{esc(author)}/{esc(slug)}.html">{esc(rec["title"])}</a>'
             f'<span class="meta">{esc(rec["author_name"])} &middot; '
-            f'{esc(rec["kind"])} &middot; gathered from {len(rec["works"])} '
-            f'works &middot; {esc(rec["created"])}</span></li>')
+            f'{esc(rec["kind"])} &middot; {len(rec["works"])} works '
+            f'&middot; {esc(rec["created"])}</span></li>')
     n = len(items)
     body = f"""<h1 class="piece-title">archive</h1>
 <input type="search" id="q" class="search" autocomplete="off"
@@ -358,8 +358,8 @@ def index_page(cfg, by_author, latest, has_card, label="the latest piece"):
             items.append(
                 f'<li><a href="{esc(author)}/{esc(slug)}.html">'
                 f'{esc(rec["title"])}</a>'
-                f'<span class="meta">{esc(rec["kind"])} &middot; gathered '
-                f'from {len(rec["works"])} works &middot; '
+                f'<span class="meta">{esc(rec["kind"])} &middot; '
+                f'{len(rec["works"])} works &middot; '
                 f'{esc(rec["created"])}</span></li>')
         if items:
             sections.append(f'<h2 class="author">{esc(meta["name"])}</h2>\n'

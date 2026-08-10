@@ -8,6 +8,7 @@
    surface — do not reorder or cycle the w-slots. */
 :root {
   color-scheme: dark;
+  --seam: 26%;                 /* washes read dimmer on a dark ground */
   --paper: #1c1a16;
   --ink: #e8e2d5;
   --muted: #948c7c;
@@ -26,6 +27,7 @@
 }
 :root[data-theme="light"] {
   color-scheme: light;
+  --seam: 13%;
   --paper: #faf7f0;
   --ink: #26221c;
   --muted: #7a7264;
@@ -281,7 +283,7 @@ label.seams:hover { background: color-mix(in srgb, var(--accent) 10%, transparen
 #seams:checked ~ .piece .s.w8 { --sw: var(--w8); }
 /* subtle: a quiet wash in the work's color, nothing that reads as a link */
 #seams:checked ~ .piece .s[class*=" w"] {
-  background: color-mix(in srgb, var(--sw) 13%, transparent);
+  background: color-mix(in srgb, var(--sw) var(--seam), transparent);
 }
 /* hover/focus highlight must still win over the seam tints */
 #seams:checked ~ .piece .s:hover,
