@@ -193,14 +193,25 @@ def text_paragraphs(sentences, work_slot, kind="story"):
         for p in paras)
 
 
-def legend_html(rec, work_slot):
+def rank_works(rec):
+    """Works ordered by how many sentences they contribute (desc, then
+    alphabetical) — the 8 palette slots go to the biggest contributors,
+    only the smallest go untinted."""
+    counts = {}
+    for e in rec["sentences"]:
+        if "work" in e:
+            counts[e["work"]] = counts.get(e["work"], 0) + 1
+    return sorted(rec["works"], key=lambda w: (-counts.get(w, 0), w))
+
+
+def legend_html(rec, ranked, work_slot):
     """Legend for the seams view — swatch + work title, identity never
     color-alone. Works past the 8 palette slots stay untinted (never cycle
     hues); glue keeps its dotted mark."""
-    items = [f'<li><span class="swatch w{slot}"></span>{esc(work)}</li>'
-             for work, slot in work_slot.items()]
-    items.extend(f'<li><span class="swatch"></span>{esc(w)}</li>'
-                 for w in rec["works"][8:])
+    items = [(f'<li><span class="swatch w{work_slot[w]}"></span>{esc(w)}</li>'
+              if w in work_slot else
+              f'<li><span class="swatch"></span>{esc(w)}</li>')
+             for w in ranked]
     if any(e["class"] == "GLUE" for e in rec["sentences"]):
         items.append('<li><span class="swatch glueswatch"></span>'
                      "connective &mdash; not the author's words</li>")
@@ -228,7 +239,8 @@ def gateline(rec, about_href, permalink=None, prov_href=None):
 def piece_block(rec, about_href, permalink=None, heading="h1", prov_href=None):
     """The toggle + legend + sentences + gateline for one piece. The seams
     checkbox and its dependents must stay siblings (the CSS uses `~`)."""
-    work_slot = {w: i + 1 for i, w in enumerate(rec["works"][:8])}
+    ranked = rank_works(rec)
+    work_slot = {w: i + 1 for i, w in enumerate(ranked[:8])}
     title = esc(rec["title"])
     if permalink:
         title = f'<a href="{esc(permalink)}">{title}</a>'
@@ -239,7 +251,7 @@ def piece_block(rec, about_href, permalink=None, heading="h1", prov_href=None):
 {esc(rec['created'])} &middot; hover any sentence for its source &middot;
 <label for="seams" class="seams"><span class="on">hide the
 seams</span><span class="off">show the seams</span></label></p>
-{legend_html(rec, work_slot)}
+{legend_html(rec, ranked, work_slot)}
 <div class="piece{' verse' if rec['kind'] == 'poem' else ''}">
 {text_paragraphs(rec['sentences'], work_slot, rec['kind'])}
 </div>
