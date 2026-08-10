@@ -49,13 +49,40 @@ body {
   color: var(--ink);
   font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
   line-height: 1.65;
-  font-size: 1.06rem;
+  /* fluid type: the column grows with the window, so a fullscreen browser
+     gets a bigger, still-readable page instead of a lost thin strip */
+  font-size: clamp(1.04rem, 0.92rem + 0.35vw, 1.3rem);
 }
 
-main {
-  max-width: 42rem;
+header.site {
+  border-bottom: 1px solid var(--rule);
+  font-family: system-ui, sans-serif;
+}
+header.site .inner {
+  max-width: 44rem;
   margin: 0 auto;
-  padding: 3rem 1.25rem 5rem;
+  padding: .8rem 1.25rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+header.site .wordmark {
+  font-family: Georgia, serif;
+  font-variant: small-caps;
+  letter-spacing: .14em;
+  font-size: 1.15rem;
+  color: inherit;
+  text-decoration: none;
+}
+header.site nav { display: flex; gap: 1.2rem; font-size: .85rem; }
+header.site nav a { color: var(--muted); text-decoration: none; }
+header.site nav a:hover { color: var(--accent); }
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2.2rem 1.25rem 5rem;
 }
 
 a { color: var(--accent); }
@@ -170,11 +197,21 @@ ul.texts .meta { margin-left: .6rem; }
   pointer-events: none;
 }
 label.seams {
+  display: inline-block;
+  font-family: system-ui, sans-serif;
+  font-size: .78rem;
   color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--rule));
+  border-radius: 999px;
+  padding: .12em .8em;
   cursor: pointer;
-  border-bottom: 1px dotted var(--accent);
+  user-select: none;
 }
-.seams-box:focus-visible + .byline label.seams { outline: 2px solid var(--accent); }
+label.seams:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.seams-box:focus-visible ~ .controls label.seams { outline: 2px solid var(--accent); }
+/* the label names the action, not the state */
+#seams:checked ~ .controls .seams .off { display: none; }
+#seams:not(:checked) ~ .controls .seams .on { display: none; }
 
 .legend {
   display: none;
@@ -205,14 +242,18 @@ label.seams {
 .swatch.w8 { background: var(--w8); }
 .swatch.glueswatch { border-bottom: 2px dotted var(--muted); height: .5em; }
 
-#seams:checked ~ .piece .s.w1 { background: color-mix(in srgb, var(--w1) 24%, transparent); }
-#seams:checked ~ .piece .s.w2 { background: color-mix(in srgb, var(--w2) 24%, transparent); }
-#seams:checked ~ .piece .s.w3 { background: color-mix(in srgb, var(--w3) 24%, transparent); }
-#seams:checked ~ .piece .s.w4 { background: color-mix(in srgb, var(--w4) 24%, transparent); }
-#seams:checked ~ .piece .s.w5 { background: color-mix(in srgb, var(--w5) 24%, transparent); }
-#seams:checked ~ .piece .s.w6 { background: color-mix(in srgb, var(--w6) 24%, transparent); }
-#seams:checked ~ .piece .s.w7 { background: color-mix(in srgb, var(--w7) 24%, transparent); }
-#seams:checked ~ .piece .s.w8 { background: color-mix(in srgb, var(--w8) 24%, transparent); }
+#seams:checked ~ .piece .s.w1 { --sw: var(--w1); }
+#seams:checked ~ .piece .s.w2 { --sw: var(--w2); }
+#seams:checked ~ .piece .s.w3 { --sw: var(--w3); }
+#seams:checked ~ .piece .s.w4 { --sw: var(--w4); }
+#seams:checked ~ .piece .s.w5 { --sw: var(--w5); }
+#seams:checked ~ .piece .s.w6 { --sw: var(--w6); }
+#seams:checked ~ .piece .s.w7 { --sw: var(--w7); }
+#seams:checked ~ .piece .s.w8 { --sw: var(--w8); }
+/* subtle: a quiet wash in the work's color, nothing that reads as a link */
+#seams:checked ~ .piece .s[class*=" w"] {
+  background: color-mix(in srgb, var(--sw) 13%, transparent);
+}
 /* hover/focus highlight must still win over the seam tints */
 #seams:checked ~ .piece .s:hover,
 #seams:checked ~ .piece .s:focus {

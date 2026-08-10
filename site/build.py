@@ -108,6 +108,12 @@ def page(title, body, css_prefix="", head=""):
 {head}
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="{css_prefix}style.css">
+<header class="site">
+<div class="inner">
+<a class="wordmark" href="{css_prefix}index.html">cento</a>
+<nav><a href="{css_prefix}about.html">about</a></nav>
+</div>
+</header>
 <main>
 {body}
 </main>
@@ -191,10 +197,11 @@ def piece_block(rec, about_href, permalink=None, heading="h1"):
         title = f'<a href="{esc(permalink)}">{title}</a>'
     return f"""<{heading} class="piece-title">{title}</{heading}>
 <section class="piece-wrap">
-<input type="checkbox" id="seams" class="seams-box">
-<p class="byline">{esc(rec['author_name'])} &mdash; arranged, never written
-&middot; {esc(rec['created'])} &middot; hover any sentence for its source
-&middot; <label for="seams" class="seams">show the seams</label></p>
+<input type="checkbox" id="seams" class="seams-box" checked>
+<p class="byline controls">{esc(rec['author_name'])} &mdash; arranged, never
+written &middot; {esc(rec['created'])} &middot; hover any sentence for its
+source &middot; <label for="seams" class="seams"><span class="on">hide the
+seams</span><span class="off">show the seams</span></label></p>
 {legend_html(rec, work_slot)}
 <div class="piece">
 {text_paragraphs(rec['sentences'], work_slot)}
@@ -220,25 +227,39 @@ def text_desc(rec):
 
 
 def text_page(rec, path, has_card):
-    body = f"""<p class="byline site-title"><a href="../index.html">cento</a></p>
-{piece_block(rec, "../index.html#about")}
-"""
+    body = piece_block(rec, "../about.html") + "\n"
     head = head_meta(f"{rec['title']} — {rec['author_name']}",
                      text_desc(rec), path, has_card, "../")
     return page(f"{rec['title']} — {rec['author_name']}", body, "../", head)
 
 
-def index_page(cfg, by_author, latest, has_card):
+def about_page(has_card):
     with open(os.path.join(SITE, "about.md"), encoding="utf-8") as f:
         manifesto = md_paragraphs(f.read())
+    body = f"""<h1 class="piece-title">about</h1>
+<div class="manifesto">
+{manifesto}
+</div>
+<hr>
+<p>New pieces are announced on the <a href="feed.xml">Atom feed</a> &mdash;
+paste that link into a feed reader (it is a machine-readable file, not a
+page to visit).</p>
+"""
+    head = head_meta(f"about — {SITE_NAME}",
+                     "What a cento is, and how every sentence on this site "
+                     "is verified to be the author's own.",
+                     "about.html", has_card)
+    return page(f"about — {SITE_NAME}", body, "", head)
 
+
+def index_page(cfg, by_author, latest, has_card):
     latest_html = ""
     if latest:
         author, slug, rec = latest
         latest_html = (
             '<p class="latest-label">the latest piece</p>\n'
-            + piece_block(rec, "#about", f"{esc(author)}/{esc(slug)}.html",
-                          heading="h2")
+            + piece_block(rec, "about.html",
+                          f"{esc(author)}/{esc(slug)}.html", heading="h1")
             + "\n<hr>\n")
 
     sections = []
@@ -258,13 +279,9 @@ def index_page(cfg, by_author, latest, has_card):
                             f'<ul class="texts">\n' + "\n".join(items) +
                             "\n</ul>")
     sections_html = "".join(s + "\n" for s in sections)
-    body = f"""<h1 class="site-title">cento</h1>
-<p class="tagline">{esc(TAGLINE)} &middot; <a href="feed.xml">feed</a></p>
-{latest_html}{sections_html}<hr>
-<div class="manifesto" id="about">
-{manifesto}
-</div>
-"""
+    body = f"""<p class="tagline">{esc(TAGLINE)} &mdash; every sentence the
+author's own, verified. <a href="about.html">How this works.</a></p>
+{latest_html}{sections_html}"""
     head = head_meta(f"{SITE_NAME} — {TAGLINE}",
                      "Every sentence verbatim from the author's public-domain "
                      "work, verified mechanically, traceable on hover. The "
@@ -348,6 +365,8 @@ def main():
         shutil.copy(card_src, OUT)
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_page(cfg, by_author, latest, has_card))
+    with open(os.path.join(OUT, "about.html"), "w", encoding="utf-8") as f:
+        f.write(about_page(has_card))
     with open(os.path.join(OUT, "feed.xml"), "w", encoding="utf-8") as f:
         f.write(atom_feed(all_texts))
     n = 0
