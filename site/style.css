@@ -317,3 +317,17 @@ label.seams:hover { background: color-mix(in srgb, var(--accent) 10%, transparen
   color: var(--muted);
   font-size: .88rem;
 }
+
+footer.site {
+  border-top: 1px solid var(--rule);
+  font-family: system-ui, sans-serif;
+  font-size: .8rem;
+  color: var(--muted);
+}
+footer.site .inner {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 1.4rem;
+}
+footer.site a { color: inherit; }
+footer.site a:hover { color: var(--accent); }

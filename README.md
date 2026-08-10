@@ -41,5 +41,12 @@ pieces. Set `SITE_URL` (e.g. `SITE_URL=https://example.org bin/serve.sh`)
 before deploying so canonical/OpenGraph/feed URLs point at the real host —
 unset, they fall back to localhost and the build warns.
 
+## Deployment
+
+Live at <https://chrdamico.github.io/cento/>. Every push to `main` rebuilds
+`site/out/` from the committed `texts/` and republishes
+(`.github/workflows/pages.yml`). Generation never runs in CI — new pieces
+are generated locally with `bin/generate.sh` and pushed.
+
 Zero marginal cost by design: Claude subscription (`claude -p`, no API key),
 Project Gutenberg corpora fetched once, static site.

@@ -34,6 +34,7 @@ SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 BASE = SITE_URL or "http://localhost:8080"
 SITE_NAME = "cento"
 TAGLINE = "new texts by dead writers — assembled, never written"
+REPO_URL = "https://github.com/chrdamico/cento"
 
 esc = html.escape
 
@@ -146,6 +147,11 @@ def page(title, body, css_prefix="", head=""):
 <main>
 {body}
 </main>
+<footer class="site">
+<div class="inner">every sentence mechanically verified &mdash; the
+<a href="{REPO_URL}">code and the gate are public</a> &middot;
+<a href="{css_prefix}feed.xml">atom feed</a></div>
+</footer>
 {PAGE_JS}
 </html>
 """
@@ -201,7 +207,7 @@ def legend_html(rec, work_slot):
     return '<ul class="legend">\n' + "\n".join(items) + "\n</ul>"
 
 
-def gateline(rec, about_href, permalink=None):
+def gateline(rec, about_href, permalink=None, prov_href=None):
     g = rec["gate"]
     n_src = g["VERBATIM"] + g["TWEAKED"]
     bits = [f"{n_src} sentences found verbatim in {esc(rec['author_name'])}"]
@@ -212,12 +218,14 @@ def gateline(rec, about_href, permalink=None):
                     f"added (dotted)")
     works = ", ".join(esc(w) for w in rec["works"])
     perma = (f' <a href="{esc(permalink)}">Permalink.</a>' if permalink else "")
+    prov = (f' <a href="{esc(prov_href)}">Provenance (JSON).</a>'
+            if prov_href else "")
     return (f'<p class="gateline">{"; ".join(bits)} &mdash; checked '
             f"mechanically, not on trust. Gathered from: {works}. "
-            f'<a href="{about_href}">How this works.</a>{perma}</p>')
+            f'<a href="{about_href}">How this works.</a>{prov}{perma}</p>')
 
 
-def piece_block(rec, about_href, permalink=None, heading="h1"):
+def piece_block(rec, about_href, permalink=None, heading="h1", prov_href=None):
     """The toggle + legend + sentences + gateline for one piece. The seams
     checkbox and its dependents must stay siblings (the CSS uses `~`)."""
     work_slot = {w: i + 1 for i, w in enumerate(rec["works"][:8])}
@@ -235,7 +243,7 @@ seams</span><span class="off">show the seams</span></label></p>
 <div class="piece">
 {text_paragraphs(rec['sentences'], work_slot)}
 </div>
-{gateline(rec, about_href, permalink)}
+{gateline(rec, about_href, permalink, prov_href)}
 </section>"""
 
 
@@ -256,7 +264,8 @@ def text_desc(rec):
 
 
 def text_page(rec, path, has_card):
-    body = piece_block(rec, "../about.html") + "\n"
+    slug = os.path.basename(path)[:-5]
+    body = piece_block(rec, "../about.html", prov_href=f"{slug}.json") + "\n"
     head = head_meta(f"{rec['title']} — {rec['author_name']}",
                      text_desc(rec), path, has_card, "../")
     return page(f"{rec['title']} — {rec['author_name']}", body, "../", head)
@@ -336,7 +345,8 @@ def index_page(cfg, by_author, latest, has_card):
         latest_html = (
             '<p class="latest-label">the latest piece</p>\n'
             + piece_block(rec, "about.html",
-                          f"{esc(author)}/{esc(slug)}.html", heading="h1")
+                          f"{esc(author)}/{esc(slug)}.html", heading="h1",
+                          prov_href=f"{esc(author)}/{esc(slug)}.json")
             + "\n<hr>\n")
 
     sections = []
@@ -454,6 +464,9 @@ def main():
         path = f"{author}/{slug}.html"
         with open(os.path.join(OUT, path), "w", encoding="utf-8") as f:
             f.write(text_page(rec, path, has_card))
+        # the provenance JSON is the product's receipt — published as-is
+        shutil.copy(os.path.join(TEXTS, author, f"{slug}.json"),
+                    os.path.join(OUT, author, f"{slug}.json"))
         n += 1
     if not SITE_URL:
         print("site: WARNING SITE_URL unset — canonical/og/feed URLs point "

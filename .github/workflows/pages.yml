@@ -1,0 +1,37 @@
+# Build site/out/ from the committed texts/ and publish to GitHub Pages.
+# Generation (claude -p) never runs here — it stays local (see PLAN.md
+# Phase 5): pushing a new text to main is what triggers a redeploy.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: build site
+        run: SITE_URL=https://chrdamico.github.io/cento python3 site/build.py
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/out
+      - id: deployment
+        uses: actions/deploy-pages@v4
