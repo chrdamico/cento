@@ -89,6 +89,24 @@ hr {
 
 .manifesto p { margin: 1rem 0; }
 
+.latest-label {
+  font-variant: small-caps;
+  letter-spacing: .12em;
+  color: var(--muted);
+  font-size: .95rem;
+  margin: 2.6rem 0 .4rem;
+}
+
+.piece-title {
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0 0 .3rem;
+}
+h1.piece-title { font-size: 2rem; }
+h2.piece-title { font-size: 1.7rem; }
+.piece-title a { color: inherit; text-decoration: none; }
+.piece-title a:hover { color: var(--accent); }
+
 h2.author {
   font-weight: normal;
   font-variant: small-caps;

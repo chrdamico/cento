@@ -36,5 +36,10 @@ bin/generate.sh emerson      # (theme defaults to the first unused one)
 bin/serve.sh                 # build the site, serve on localhost:8080
 ```
 
+The index leads with the latest piece; `/feed.xml` is an Atom feed of all
+pieces. Set `SITE_URL` (e.g. `SITE_URL=https://example.org bin/serve.sh`)
+before deploying so canonical/OpenGraph/feed URLs point at the real host —
+unset, they fall back to localhost and the build warns.
+
 Zero marginal cost by design: Claude subscription (`claude -p`, no API key),
 Project Gutenberg corpora fetched once, static site.
