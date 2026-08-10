@@ -235,9 +235,9 @@ def piece_block(rec, about_href, permalink=None, heading="h1", prov_href=None):
     return f"""<{heading} class="piece-title">{title}</{heading}>
 <section class="piece-wrap">
 <input type="checkbox" id="seams" class="seams-box" checked>
-<p class="byline controls">{esc(rec['author_name'])} &mdash; arranged, never
-written &middot; {esc(rec['created'])} &middot; hover any sentence for its
-source &middot; <label for="seams" class="seams"><span class="on">hide the
+<p class="byline controls">{esc(rec['author_name'])} &middot;
+{esc(rec['created'])} &middot; hover any sentence for its source &middot;
+<label for="seams" class="seams"><span class="on">hide the
 seams</span><span class="off">show the seams</span></label></p>
 {legend_html(rec, work_slot)}
 <div class="piece">
