@@ -25,15 +25,15 @@ Two authors, two texts each, served locally:
 
 ## Status
 
-Phase 0 — skeleton and plan. See `PLAN.md` for the phases and acceptance
-criteria.
+Phases 0–4 done: corpus, gate, stitcher, site. See `PLAN.md` for the phases
+and acceptance criteria; Phase 5 (daily rotation, GitHub Pages) is next.
 
 ```sh
-# once Phases 1–4 land:
 bin/fetch_corpus.sh          # download + index the corpora (once)
+python3 pipeline/segment.py  # rebuild the sentence index
 bin/generate.sh poe          # theme → stitched, gated text in texts/
-bin/generate.sh emerson
-bin/serve.sh                 # build the site, serve on localhost
+bin/generate.sh emerson      # (theme defaults to the first unused one)
+bin/serve.sh                 # build the site, serve on localhost:8080
 ```
 
 Zero marginal cost by design: Claude subscription (`claude -p`, no API key),
