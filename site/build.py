@@ -178,7 +178,7 @@ def sentence_html(e, work_slot):
             f'<span class="tip">{tip}</span></span>')
 
 
-def text_paragraphs(sentences, work_slot):
+def text_paragraphs(sentences, work_slot, kind="story"):
     paras, cur = [], []
     for e in sentences:
         if e.get("pbreak") and cur:
@@ -187,8 +187,9 @@ def text_paragraphs(sentences, work_slot):
         cur.append(e)
     if cur:
         paras.append(cur)
+    sep = "<br>\n" if kind == "poem" else "\n"   # verse: a line is a line
     return "\n".join(
-        "<p>" + "\n".join(sentence_html(e, work_slot) for e in p) + "</p>"
+        "<p>" + sep.join(sentence_html(e, work_slot) for e in p) + "</p>"
         for p in paras)
 
 
@@ -239,8 +240,8 @@ def piece_block(rec, about_href, permalink=None, heading="h1", prov_href=None):
 <label for="seams" class="seams"><span class="on">hide the
 seams</span><span class="off">show the seams</span></label></p>
 {legend_html(rec, work_slot)}
-<div class="piece">
-{text_paragraphs(rec['sentences'], work_slot)}
+<div class="piece{' verse' if rec['kind'] == 'poem' else ''}">
+{text_paragraphs(rec['sentences'], work_slot, rec['kind'])}
 </div>
 {gateline(rec, about_href, permalink, prov_href)}
 </section>"""
@@ -387,6 +388,9 @@ def plain_paragraphs(rec):
         cur.append(e["text"])
     if cur:
         paras.append(cur)
+    if rec["kind"] == "poem":
+        return "\n".join(
+            "<p>" + "<br/>".join(esc(l) for l in p) + "</p>" for p in paras)
     return "\n".join("<p>" + esc(" ".join(p)) + "</p>" for p in paras)
 
 

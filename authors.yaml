@@ -12,12 +12,39 @@ poe:
     - 2147                       # vol 1 (tales)
     - 2148                       # vol 2 (tales)
     - 2149                       # vol 3 (tales)
+    - 2150                       # vol 4 (tales)
+    - 2151                       # vol 5 (tales + misc)
   themes:
     - the sea at night
     - a house that remembers
     - premature burial
     - the hour after midnight
     - a sound that should not be there
+
+nietzsche:
+  name: Friedrich Nietzsche
+  kind: essay                    # -> prompts/stitch-essay.md
+  gutenberg:
+    - 1998                       # Thus Spake Zarathustra (tr. Thomas Common, PD)
+    - 4363                       # Beyond Good and Evil (tr. Helen Zimmern, PD)
+  themes:
+    - self-overcoming
+    - solitude and the heights
+    - laughter and dancing
+    - the courage of the free spirit
+    - masks and depths
+
+whitman:
+  name: Walt Whitman
+  kind: poem                     # -> prompts/stitch-poem.md, line unit
+  gutenberg:
+    - 1322                       # Leaves of Grass
+  themes:
+    - the body and the soul
+    - the open road
+    - the sea at night
+    - the city and the crowd
+    - death and the grass
 
 emerson:
   name: Ralph Waldo Emerson

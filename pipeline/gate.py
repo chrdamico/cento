@@ -111,8 +111,19 @@ def _tweaked_find(index, s):
 def run_gate(body_text, index, kind="story"):
     min_works = int(MIN_WORKS) if MIN_WORKS else (3 if kind == "essay" else 2)
 
-    body = " ".join(_MD_DECOR.sub("", l) for l in body_text.splitlines())
-    sentences = split_sentences(body)
+    if kind == "poem":
+        # verse: the unit is the LINE, exactly as the index stores it —
+        # never resplit or rejoin, a line is a line
+        sentences = [s for s in
+                     (_MD_DECOR.sub("", l).strip() for l in body_text.splitlines())
+                     if s]
+    else:
+        body = " ".join(_MD_DECOR.sub("", l) for l in body_text.splitlines())
+        sentences = split_sentences(body)
+
+    # Verse lines are short — at the prose glue width (12 words) an invented
+    # line would pass as GLUE, so poems get a far tighter allowance.
+    glue_max_words = 6 if kind == "poem" else GLUE_MAX_WORDS
 
     results = []          # one entry per sentence, in candidate order
     counts = {"VERBATIM": 0, "TWEAKED": 0, "GLUE": 0, "NEW": 0}
@@ -131,7 +142,7 @@ def run_gate(body_text, index, kind="story"):
             r = _tweaked_find(index, s)
             if r is not None:
                 cls = "TWEAKED"
-            elif len(s.split(" ")) <= GLUE_MAX_WORDS:
+            elif len(s.split(" ")) <= glue_max_words:
                 cls = "GLUE"
             else:
                 cls = "NEW"
@@ -150,6 +161,8 @@ def run_gate(body_text, index, kind="story"):
 
     counted = sum(counts.values())
     allowed_glue = max(1, counted * (100 - VERBATIM_MIN) // 100)
+    if kind == "poem":
+        allowed_glue = 1               # one connective line, never more
     reasons = []
     if counted == 0:
         reasons.append("empty candidate: no sentences long enough to judge")
@@ -215,7 +228,8 @@ def report(result):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--author", required=True)
-    ap.add_argument("--kind", default="story", choices=("story", "essay"))
+    ap.add_argument("--kind", default="story",
+                    choices=("story", "essay", "poem"))
     ap.add_argument("--json", help="write full result JSON here")
     ap.add_argument("body", help="candidate body file, or - for stdin")
     args = ap.parse_args()

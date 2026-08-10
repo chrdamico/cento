@@ -177,6 +177,7 @@ input.search::placeholder { color: var(--muted); }
 /* ---- text pages: sentences and their tooltips ---- */
 
 .piece p { margin: 1.1rem 0; text-align: justify; hyphens: auto; }
+.piece.verse p { text-align: left; hyphens: none; }
 
 .s {
   position: relative;

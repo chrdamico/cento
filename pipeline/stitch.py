@@ -101,12 +101,17 @@ def parse_candidate(out):
     return {"title": title, "sources": sources, "body": body.strip()}
 
 
-def mark_para_breaks(body, sentences):
-    """The gate flattens the body; recover the candidate's paragraph breaks
-    for the site by re-splitting per paragraph. Only trusted when the counts
-    agree exactly — otherwise the text renders as one paragraph."""
-    counts = [len(split_sentences(p)) for p in re.split(r"\n\s*\n", body)
-              if p.strip()]
+def mark_para_breaks(body, sentences, kind="story"):
+    """The gate flattens the body; recover the candidate's paragraph
+    (stanza) breaks for the site by re-splitting per block. Only trusted
+    when the counts agree exactly — otherwise the text renders flat."""
+    if kind == "poem":
+        blocks = [[l for l in p.splitlines() if l.strip()]
+                  for p in re.split(r"\n\s*\n", body) if p.strip()]
+        counts = [len(b) for b in blocks]
+    else:
+        counts = [len(split_sentences(p)) for p in re.split(r"\n\s*\n", body)
+                  if p.strip()]
     if sum(counts) != len(sentences):
         return
     i = 0
@@ -186,7 +191,7 @@ def main():
         result = run_gate(cand["body"], index, kind)
         print(report(result))
         if result["pass"]:
-            mark_para_breaks(cand["body"], result["sentences"])
+            mark_para_breaks(cand["body"], result["sentences"], kind)
             record = {
                 "author": args.author,
                 "author_name": meta["name"],

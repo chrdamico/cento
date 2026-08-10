@@ -67,9 +67,11 @@ def theme_keywords(theme):
     return [_stem(w) for w in words if w not in STOPWORDS and len(w) >= 3]
 
 
-def load_paragraphs(author):
-    """Index records grouped back into paragraphs, in book order."""
+def load_paragraphs(author, kind="story"):
+    """Index records grouped back into paragraphs (stanzas, for verse),
+    in book order. Verse keeps its line breaks — a line is a line."""
     path = os.path.join(INDEX_DIR, f"{author}.jsonl")
+    joiner = "\n" if kind == "poem" else " "
     paras, order = {}, []
     with open(path, encoding="utf-8") as f:
         for line in f:
@@ -84,7 +86,7 @@ def load_paragraphs(author):
     out = []
     for pkey in order:
         p = paras[pkey]
-        p["text"] = " ".join(p["texts"])
+        p["text"] = joiner.join(p["texts"])
         p["norm"] = " ".join(p["norms"])
         p["dialogue"] = '"' in p["norm"]
         del p["texts"], p["norms"]
@@ -103,7 +105,8 @@ def _score(p, kws):
 
 def select(paras, theme, kind, max_chars):
     kws = theme_keywords(theme)
-    pool = [p for p in paras if len(p["text"]) >= MIN_PARA_CHARS]
+    min_chars = 40 if kind == "poem" else MIN_PARA_CHARS   # stanzas run short
+    pool = [p for p in paras if len(p["text"]) >= min_chars]
     for p in pool:
         p["score"] = _score(p, kws) if kws else 0
 
@@ -147,7 +150,7 @@ def select(paras, theme, kind, max_chars):
 
 
 def build(author, theme, kind, max_chars=WORKINGSET_MAX):
-    picked, used = select(load_paragraphs(author), theme, kind, max_chars)
+    picked, used = select(load_paragraphs(author, kind), theme, kind, max_chars)
     if len(used) < 4:
         print(f"workingset: WARNING only {len(used)} work(s) in set",
               file=sys.stderr)
@@ -161,7 +164,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--author", required=True)
     ap.add_argument("--theme", required=True)
-    ap.add_argument("--kind", choices=("story", "essay"))
+    ap.add_argument("--kind", choices=("story", "essay", "poem"))
     ap.add_argument("--max", type=int, default=WORKINGSET_MAX)
     args = ap.parse_args()
     kind = args.kind or authors_mod.load()[args.author]["kind"]

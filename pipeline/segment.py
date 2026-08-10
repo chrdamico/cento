@@ -34,8 +34,23 @@ INDEX = os.path.join(ROOT, "corpus", "index")
 # headings from the Contents listing and the body.
 NON_AUTHOR = re.compile(
     r"^(PREFACE|LIFE OF|DEATH OF|INTRODUCTION|CRITICAL OPINIONS"
-    r"|CHRONOLOGICAL|NOTES\b|AN APPRECIATION|PUBLISHERS)"
+    r"|CHRONOLOGICAL|NOTES\b|AN APPRECIATION|PUBLISHERS"
+    # Zarathustra: the Forster-Nietzsche biography, part dividers, and the
+    # appendix; BGE: the closing poem is L.A. Magnus's translation, not
+    # Zimmern's prose
+    r"|HOW ZARATHUSTRA CAME INTO BEING|APPENDIX"
+    r"|(FIRST|SECOND|THIRD|FOURTH) PART|FROM THE HEIGHTS)"
 )
+
+# Books whose Contents entries are chapters/discourses of one work: the
+# entry alone ("The Free Spirit") makes a poor hover title, so the book
+# title is prefixed ("Beyond Good and Evil: The Free Spirit").
+WORK_PREFIX = {
+    1998: "Thus Spake Zarathustra",
+    4363: "Beyond Good and Evil",
+}
+# Leading chapter/discourse numbering stripped from those entries.
+ENTRY_NUMBER = re.compile(r"^(CHAPTER\s+)?[IVXLC]+[.:]\s*", re.IGNORECASE)
 CHAPTER = re.compile(r"^CHAPTER\s+(\d+)")
 FOOTNOTE_HEAD = re.compile(r"^FOOTNOTES?\b", re.IGNORECASE)
 # Editorial reference marks stripped from body text: [93], (*1), {*2}
@@ -73,10 +88,15 @@ def book_lines(path):
 
 
 def parse_contents(lines):
-    """Return (entries, index_after_contents). Entries in book order."""
+    """Return (entries, index_after_contents). Entries in book order.
+
+    Two shapes exist in the corpus: ALL-CAPS entries (Poe, Emerson, BGE)
+    and indented mixed-case entries with roman numerals (Zarathustra).
+    Indented mixed-case lines are accepted as entries; a flush-left
+    non-caps line still ends the listing (redactor notes etc.)."""
     start = None
     for i, l in enumerate(lines[:200]):
-        if l.strip().upper() == "CONTENTS":
+        if l.strip().upper().rstrip(".") in ("CONTENTS", "TABLE OF CONTENTS"):
             start = i + 1
             break
     if start is None:
@@ -84,6 +104,7 @@ def parse_contents(lines):
     entries, blanks, i = [], 0, start
     while i < len(lines):
         s = lines[i].strip()
+        indent = len(lines[i]) - len(lines[i].lstrip())
         if not s:
             blanks += 1
             if blanks >= 3 and entries:
@@ -93,9 +114,10 @@ def parse_contents(lines):
             if is_capsline(s) and not CHAPTER.match(heading_key(s)):
                 entries.append(s)
             elif not is_capsline(s):
-                # redactor notes etc. inside the contents block — a run of
-                # non-caps lines means the listing is over
-                break
+                if indent >= 3 and 3 < len(s) <= 70:
+                    entries.append(s)      # Zarathustra-style entry
+                else:
+                    break
         i += 1
     return entries, i
 
@@ -118,6 +140,9 @@ def match_entry(line, keys):
 def clean(text):
     text = MARKERS.sub("", text)
     text = text.replace("_", "")          # PG italics markers
+    # aphorism numbering (BGE: "63. He who is a thorough teacher...") is
+    # apparatus, not prose — the hover locator already carries the position
+    text = re.sub(r"^\d{1,3}\.\s+", "", text)
     return text
 
 
@@ -157,6 +182,19 @@ def titlecase(entry):
     return " ".join(words)
 
 
+def work_title(entry, gid):
+    """Display title for a Contents entry; chapter-style books get the book
+    title prefixed so hover locators read as provenance, not as riddles."""
+    cleaned = ENTRY_NUMBER.sub("", MARKERS.sub("", entry).strip(" ."))
+    t = titlecase(cleaned)
+    prefix = WORK_PREFIX.get(gid)
+    if not prefix:
+        return t
+    if heading_key(t) == heading_key(prefix):
+        return prefix                      # the book's own title entry
+    return f"{prefix}: {t}"
+
+
 # A paragraph that opens with an editorial footnote definition, e.g. "(*1) ..."
 FOOTNOTE_PARA = re.compile(r"^\(\*\d+\)")
 
@@ -173,7 +211,7 @@ def segment_book(author, gid):
     for e in entries:
         k = heading_key(e)
         if k and k not in keys:
-            keys[k] = titlecase(e)
+            keys[k] = work_title(e, gid)
     include = {k for k in keys if not NON_AUTHOR.match(k)}
 
     work_key = None          # contents key of the work being collected
@@ -260,13 +298,98 @@ def segment_book(author, gid):
     return records, counts
 
 
+VERSE_TITLE = re.compile(r"^\S.*[a-z]")     # flush-left line with lowercase
+SECTION_NO = re.compile(r"^\s+(\d{1,3})\s*$")
+
+
+def segment_verse(author, gid):
+    """kind: poem — Leaves of Grass shape: flush-left mixed-case poem
+    titles, verse lines indented 2, wrapped continuations indented deeper,
+    stanzas split on blank lines, numbered sections inside long poems.
+    The unit is the LINE (the classical cento unit); stanzas take the
+    paragraph slot so the excerpt guard and workingset transfer as-is."""
+    lines = book_lines(os.path.join(RAW, author, f"pg{gid}.txt"))
+    started = False                # nothing before the first BOOK heading
+    poem = section = None
+    stanza_no = line_no = 0
+    seen_titles = {}
+    poems = {}                     # title -> [(section, stanza, [lines])]
+    cur = None                     # current stanza: list of logical lines
+
+    def flush_stanza():
+        nonlocal cur
+        if poem and cur:
+            poems.setdefault(poem, []).append((section, cur))
+        cur = None
+
+    for raw in lines:
+        s = raw.rstrip()
+        if not s.strip():
+            flush_stanza()
+            continue
+        indent = len(s) - len(s.lstrip())
+        text = s.strip()
+        if indent == 0:
+            if is_capsline(text):          # "BOOK I.  INSCRIPTIONS" etc.
+                flush_stanza()
+                started = True
+                poem = None
+                continue
+            if started and VERSE_TITLE.match(s):
+                flush_stanza()
+                title = clean(text).strip(" .")
+                n = seen_titles.get(title, 0) + 1
+                seen_titles[title] = n
+                poem = title if n == 1 else f"{title} ({n})"
+                section = None
+                continue
+            continue                        # front matter / stray line
+        if not started or poem is None:
+            continue
+        m = SECTION_NO.match(s)
+        if m:
+            flush_stanza()
+            section = f"§{m.group(1)}"
+            continue
+        if indent >= 5 and cur and cur[-1]:
+            cur[-1] = f"{cur[-1]} {clean(text)}"   # wrapped continuation
+            continue
+        if cur is None:
+            cur = []
+        cur.append(clean(text))
+    flush_stanza()
+
+    records, counts = [], {}
+    for title, stanzas in poems.items():
+        para_no = 0
+        for sec, stanza in stanzas:
+            para_no += 1
+            for si, line in enumerate(stanza, 1):
+                if not any(c.isalpha() for c in line):
+                    continue
+                records.append({
+                    "id": f"{author}/{slugify(title)}/p{para_no:03d}/s{si:03d}",
+                    "work": title,
+                    "work_id": f"pg{gid}",
+                    "section": sec,
+                    "para": para_no,
+                    "sent": si,
+                    "text": line,
+                    "norm": norm(line),
+                    "gutenberg_url": f"https://www.gutenberg.org/ebooks/{gid}",
+                })
+                counts[title] = counts.get(title, 0) + 1
+    return records, counts
+
+
 def main():
     os.makedirs(INDEX, exist_ok=True)
     cfg = authors_mod.load()
     for author, meta in cfg.items():
+        segment = segment_verse if meta["kind"] == "poem" else segment_book
         all_records, all_counts = [], {}
         for gid in meta["gutenberg"]:
-            recs, counts = segment_book(author, gid)
+            recs, counts = segment(author, gid)
             all_records.extend(recs)
             for t, n in counts.items():
                 all_counts[t] = all_counts.get(t, 0) + n

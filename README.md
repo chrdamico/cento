@@ -16,12 +16,15 @@ own voice notes under the same contract. The inherited pieces (verbatim gate,
 `claude -p` pattern, prompt DNA) are preserved in `reference/` and mapped in
 `PLAN.md`.
 
-## v1
-
-Two authors, two texts each, served locally:
+## Authors
 
 - **Poe** — atmospheric flash pieces (the short-story seat)
 - **Emerson** — essays (the essayist seat)
+- **Nietzsche** — essays, via the PD Common/Zimmern translations
+- **Whitman** — poems, stitched by *line*, the classical cento form
+
+The bench of future authors (and the public-domain traps that gate them)
+is in `PLAN.md`.
 
 ## Status
 

@@ -238,11 +238,34 @@ leverage:
    Pages — publishing is pure static-file work, so no `claude` in CI, and the
    site never misses a day while the queue has depth.
 4. **More authors** (each costs `segment.py` Contents-parsing fiddling —
-   budget 3–4 seats, not ten): Wilde (epigrams, the most stitchable prose
-   there is), Nietzsche and Marcus Aurelius (the trap, stated up front:
-   per-jurisdiction PD cutoffs — life+70 EU / pre-1930 US — and the
-   *translation* must be PD, not just the author; Common/Zimmern for
-   Nietzsche, Long for Aurelius), Thoreau. Pepys stays the diarist fallback.
+   budget a few seats at a time, not ten). The recurring trap, stated once:
+   per-jurisdiction PD cutoffs (life+70 EU / pre-1930 US), and for
+   translated authors the *translation* must be PD, not just the author.
+   Poetry is its own seat type: verse stitches by **line**, not sentence —
+   the original Ausonius/Proba form — and needs `kind: poem` through the
+   whole pipeline (line-unit segmentation, line-based gate, stanza-aware
+   rendering).
+
+   **The bench** (order of intended addition):
+
+   | Author | Corpus (PG) | Why / notes |
+   |---|---|---|
+   | Nietzsche *(wave 1)* | Zarathustra #1998 (tr. Common, d. 1919), Beyond Good and Evil #4363 (tr. Zimmern, d. 1934) | aphorist, huge name; both translations PD everywhere |
+   | Whitman *(wave 1, poetry)* | Leaves of Grass #1322 | free verse = long self-contained lines, no meter to violate; ideal first poet |
+   | Wilde | Intentions #887, essays | epigrams — the most stitchable prose there is |
+   | Thoreau | Walden #205 | aphoristic essayist, original English |
+   | Marcus Aurelius | Meditations #2680 (tr. Long, d. 1879) | aphorisms; PD everywhere |
+   | Emily Dickinson | Poems, 1890s series | poetry seat 2 — ONLY the Todd/Higginson editions (the 1955 Johnson restored texts are NOT PD) |
+   | Montaigne | Essays (tr. Cotton) #3600 | the grandfather of the essay; 17th-c. translation |
+   | Seneca | Letters (tr. Gummere, d. 1938; pub. 1917–25) | PD US (pre-1930) and EU (since 2009) |
+   | Schopenhauer | Essays (tr. Saunders, d. 1928) | PD both; born aphorist |
+   | Shakespeare | Sonnets #1041 | line-stitching, maximum name; the original cento material |
+   | Pepys | Diary | the diarist seat (fallback from v1 plan) |
+   | Dostoevsky | Notes from Underground (tr. Garnett, d. 1946 → EU PD 2017) | monologue fiction might stitch; hard seat |
+
+   **Blocked by translation copyright** (originals PD, standard English
+   translations not): Kafka (Muir), Rilke. Re-check for newer PD
+   translations before adding.
 5. **Novelty guard.** Before daily rotation: the workingset scorer keeps
    offering each theme's most famous sentences, so pieces will repeat across
    days. Penalize sentences already used in a published piece (cross-piece
