@@ -10,6 +10,16 @@
   --accent: #7c2d12;
   --tip-bg: #26221c;
   --tip-ink: #faf7f0;
+  /* seams view: validated categorical palette (dataviz reference order),
+     checked against --paper in both modes — do not reorder or cycle */
+  --w1: #2a78d6;
+  --w2: #eb6834;
+  --w3: #1baf7a;
+  --w4: #eda100;
+  --w5: #e87ba4;
+  --w6: #008300;
+  --w7: #4a3aa7;
+  --w8: #e34948;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,6 +30,14 @@
     --accent: #e08a5a;
     --tip-bg: #f0ead9;
     --tip-ink: #26221c;
+    --w1: #3987e5;
+    --w2: #d95926;
+    --w3: #199e70;
+    --w4: #c98500;
+    --w5: #d55181;
+    --w6: #008300;
+    --w7: #9085e9;
+    --w8: #e66767;
   }
 }
 
@@ -125,6 +143,63 @@ ul.texts .meta { margin-left: .6rem; }
 .tip .work { font-style: italic; }
 .tip a { color: inherit; }
 .tip .note { opacity: .75; }
+
+/* ---- seams view: tint each sentence by its source work ---- */
+
+.seams-box {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+label.seams {
+  color: var(--accent);
+  cursor: pointer;
+  border-bottom: 1px dotted var(--accent);
+}
+.seams-box:focus-visible + .byline label.seams { outline: 2px solid var(--accent); }
+
+.legend {
+  display: none;
+  flex-wrap: wrap;
+  gap: .35rem 1.1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.3rem 0 0;
+  font-family: system-ui, sans-serif;
+  font-size: .8rem;
+  color: var(--muted);
+}
+#seams:checked ~ .legend { display: flex; }
+.swatch {
+  display: inline-block;
+  width: .75em;
+  height: .75em;
+  border-radius: 2px;
+  margin-right: .4em;
+}
+.swatch.w1 { background: var(--w1); }
+.swatch.w2 { background: var(--w2); }
+.swatch.w3 { background: var(--w3); }
+.swatch.w4 { background: var(--w4); }
+.swatch.w5 { background: var(--w5); }
+.swatch.w6 { background: var(--w6); }
+.swatch.w7 { background: var(--w7); }
+.swatch.w8 { background: var(--w8); }
+.swatch.glueswatch { border-bottom: 2px dotted var(--muted); height: .5em; }
+
+#seams:checked ~ .piece .s.w1 { background: color-mix(in srgb, var(--w1) 24%, transparent); }
+#seams:checked ~ .piece .s.w2 { background: color-mix(in srgb, var(--w2) 24%, transparent); }
+#seams:checked ~ .piece .s.w3 { background: color-mix(in srgb, var(--w3) 24%, transparent); }
+#seams:checked ~ .piece .s.w4 { background: color-mix(in srgb, var(--w4) 24%, transparent); }
+#seams:checked ~ .piece .s.w5 { background: color-mix(in srgb, var(--w5) 24%, transparent); }
+#seams:checked ~ .piece .s.w6 { background: color-mix(in srgb, var(--w6) 24%, transparent); }
+#seams:checked ~ .piece .s.w7 { background: color-mix(in srgb, var(--w7) 24%, transparent); }
+#seams:checked ~ .piece .s.w8 { background: color-mix(in srgb, var(--w8) 24%, transparent); }
+/* hover/focus highlight must still win over the seam tints */
+#seams:checked ~ .piece .s:hover,
+#seams:checked ~ .piece .s:focus {
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+}
 
 .gateline {
   border-top: 1px solid var(--rule);

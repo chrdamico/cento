@@ -215,18 +215,41 @@ nothing else must still leave knowing this is arrangement, not imitation.
   positioning only); the index explains the concept well enough that a
   first-time visitor can answer "did an AI write this?" correctly.
 
-### Phase 5 — later (not v1)
-Daily generation timer (systemd user unit, pattern in blog-pipeline
-`watcher/`), more authors, a curator that judges each author's pool *as a set*
-(port `prompts/curate.md`; the curator runs on **Opus** — `CURATOR_MODEL`,
-default `claude-opus-5` — stitching keeps Fable), theme rotation, public
-deployment — **GitHub Pages,
-free**: the site is static files, `corpus/` never leaves the laptop, generation
-stays local on the timer (subscription `claude -p` doesn't transplant to CI
-without an API key) and each pushed text redeploys the site — plus
-per-jurisdiction public-domain cutoffs
-(life+70 EU / pre-1930 US), translations (translator copyright is the trap:
-the *translation* must be PD, not just the author).
+### Phase 5 — launch (aggregator-ready)
+
+Goal: public site, one new piece a day, shaped for a Show HN. In order of
+leverage:
+
+1. **Seams toggle** *(first)*. A "show the seams" control on every text page
+   that tints each sentence by source work, with a legend — the concept in one
+   screenshot, the image a post carries. Pure CSS (checkbox hack + per-work
+   classes from `build.py`); colors from a validated categorical palette,
+   identity never color-alone (tooltip + legend still name the work).
+2. **Today-first index + share plumbing.** Index leads with the newest piece
+   in full; archive and manifesto below. OpenGraph/Twitter meta per page,
+   RSS/Atom feed, stable permalinks. Verify tap-for-tooltip on mobile (no
+   hover there; spans already carry tabindex).
+3. **Queue, curator, daily publish.** Generation stays local and batched
+   (subscription `claude -p` doesn't transplant to CI): generate N candidates
+   per sitting into `queue/`, the curator judges each author's batch *as a
+   set* (port `prompts/curate.md`; curator runs on **Opus** — `CURATOR_MODEL`,
+   default `claude-opus-5` — stitching keeps Fable) and keeps the best. A
+   scheduled GitHub Action promotes one queued piece per day and rebuilds
+   Pages — publishing is pure static-file work, so no `claude` in CI, and the
+   site never misses a day while the queue has depth.
+4. **More authors** (each costs `segment.py` Contents-parsing fiddling —
+   budget 3–4 seats, not ten): Wilde (epigrams, the most stitchable prose
+   there is), Nietzsche and Marcus Aurelius (the trap, stated up front:
+   per-jurisdiction PD cutoffs — life+70 EU / pre-1930 US — and the
+   *translation* must be PD, not just the author; Common/Zimmern for
+   Nietzsche, Long for Aurelius), Thoreau. Pepys stays the diarist fallback.
+5. **Novelty guard.** Before daily rotation: the workingset scorer keeps
+   offering each theme's most famous sentences, so pieces will repeat across
+   days. Penalize sentences already used in a published piece (cross-piece
+   dedup in gate or curator).
+6. **Credibility artifacts.** Repo public, footer link, each piece links its
+   provenance JSON / gate report — the first HN comment is "how do I know
+   it's verbatim", and the answer must be one click away.
 
 ## Config knobs (env, like blog-pipeline)
 

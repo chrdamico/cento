@@ -73,8 +73,11 @@ def page(title, body, css_prefix=""):
 """
 
 
-def sentence_html(e):
+def sentence_html(e, work_slot):
     cls = e["class"].lower()
+    slot = work_slot.get(e.get("work"))
+    if slot:
+        cls += f" w{slot}"
     if e["class"] in ("VERBATIM", "TWEAKED"):
         where = f'<span class="work">{esc(e["work"])}</span>'
         if e.get("section"):
@@ -92,7 +95,7 @@ def sentence_html(e):
             f'<span class="tip">{tip}</span></span>')
 
 
-def text_paragraphs(sentences):
+def text_paragraphs(sentences, work_slot):
     paras, cur = [], []
     for e in sentences:
         if e.get("pbreak") and cur:
@@ -102,8 +105,22 @@ def text_paragraphs(sentences):
     if cur:
         paras.append(cur)
     return "\n".join(
-        "<p>" + "\n".join(sentence_html(e) for e in p) + "</p>"
+        "<p>" + "\n".join(sentence_html(e, work_slot) for e in p) + "</p>"
         for p in paras)
+
+
+def legend_html(rec, work_slot):
+    """Legend for the seams view — swatch + work title, identity never
+    color-alone. Works past the 8 palette slots stay untinted (never cycle
+    hues); glue keeps its dotted mark."""
+    items = [f'<li><span class="swatch w{slot}"></span>{esc(work)}</li>'
+             for work, slot in work_slot.items()]
+    items.extend(f'<li><span class="swatch"></span>{esc(w)}</li>'
+                 for w in rec["works"][8:])
+    if any(e["class"] == "GLUE" for e in rec["sentences"]):
+        items.append('<li><span class="swatch glueswatch"></span>'
+                     "connective &mdash; not the author's words</li>")
+    return '<ul class="legend">\n' + "\n".join(items) + "\n</ul>"
 
 
 def text_page(rec):
@@ -116,12 +133,16 @@ def text_page(rec):
         gate_bits.append(f"{g['GLUE']} connective{'s' if g['GLUE'] > 1 else ''} "
                          f"added (dotted)")
     works = ", ".join(esc(w) for w in rec["works"])
+    work_slot = {w: i + 1 for i, w in enumerate(rec["works"][:8])}
     body = f"""<p class="byline site-title"><a href="../index.html">cento</a></p>
 <h1>{esc(rec['title'])}</h1>
+<input type="checkbox" id="seams" class="seams-box">
 <p class="byline">{esc(rec['author_name'])} &mdash; arranged, never written
-&middot; {esc(rec['created'])} &middot; hover any sentence for its source</p>
+&middot; {esc(rec['created'])} &middot; hover any sentence for its source
+&middot; <label for="seams" class="seams">show the seams</label></p>
+{legend_html(rec, work_slot)}
 <div class="piece">
-{text_paragraphs(rec['sentences'])}
+{text_paragraphs(rec['sentences'], work_slot)}
 </div>
 <p class="gateline">{"; ".join(gate_bits)} &mdash; checked mechanically,
 not on trust. Gathered from: {works}.
