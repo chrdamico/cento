@@ -1,0 +1,490 @@
+{
+ "author": "emerson",
+ "author_name": "Ralph Waldo Emerson",
+ "kind": "essay",
+ "title": "The Iron String",
+ "theme": "self-trust",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 46,
+  "TWEAKED": 0,
+  "GLUE": 0,
+  "NEW": 0
+ },
+ "works": [
+  "Compensation",
+  "Friendship",
+  "Heroism",
+  "Prudence",
+  "Self Reliance",
+  "The American Scholar"
+ ],
+ "sentences": [
+  {
+   "text": "Trust thyself: every heart vibrates to that iron string.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p004/s001",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "To believe your own thought, to believe that what is true for you in your private heart is true for all men,--that is genius.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p002/s004",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "A man should learn to detect and watch that gleam of light which flashes across his mind from within, more than the luster of the firmament of bards and sages.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p002/s007",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The power which resides in him is new in nature, and none but he knows what that is which he can do, nor does he know until he has tried.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p003/s002",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Yet he dismisses without notice his thought, because it is his.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p002/s008",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "In every work of genius we recognize our own rejected thoughts: they come back to us with a certain alienated majesty.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p002/s009",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "To-morrow a stranger will say with masterly good sense precisely what we have thought and felt all the time, and we shall be forced to take with shame our own opinion from another.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p002/s012",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Who is the Trustee?",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p022/s002",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 22,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "What is the aboriginal Self, on which a universal reliance may be grounded?",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p022/s003",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 22,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "We denote this primary wisdom as Intuition, whilst all later teachings are tuitions.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p022/s006",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 22,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "For this self-trust, the reason is deeper than can be fathomed,--darker than can be enlightened.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p035/s001",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 35,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "We lie in the lap of immense intelligence, which makes us receivers of its truth and organs of its activity.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p022/s012",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 22,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Every man discriminates between the voluntary acts of his mind, and his involuntary perceptions, and knows that to his involuntary perceptions a perfect faith is due.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p022/s016",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 22,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Society everywhere is in conspiracy against the manhood of every one of its members.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p007/s002",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 7,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "The virtue in most request is conformity.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p007/s004",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 7,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Self-reliance is its aversion.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p007/s005",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 7,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The other terror that scares us from self-trust is our consistency; a reverence for our past act or word, because the eyes of others have no other data for computing our orbit than our past acts, and we are loth to disappoint them.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p013/s001",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 13,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Yes, we are the cowed,--we the trustless.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p034/s001",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 34,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "It is a mischievous notion that we are come late into nature; that the world was finished a long time ago.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p034/s002",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 34,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "I believe man has been wronged; he has wronged himself.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p035/s004",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 35,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Men are become of no account.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p035/s006",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 35,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Men in history, men in the world of to-day, are bugs, are spawn, and are called \"the mass\" and \"the herd.\"",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p035/s007",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 35,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Self-trust is the essence of heroism.",
+   "class": "VERBATIM",
+   "src": "emerson/heroism/p019/s001",
+   "work": "Heroism",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 19,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "It is the state of the soul at war, and its ultimate objects are the last defiance of falsehood and wrong, and the power to bear all that can be inflicted by evil agents.",
+   "class": "VERBATIM",
+   "src": "emerson/heroism/p019/s002",
+   "work": "Heroism",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 19,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "It persists; it is of an undaunted boldness, and of a fortitude not to be wearied out.",
+   "class": "VERBATIM",
+   "src": "emerson/heroism/p019/s004",
+   "work": "Heroism",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 19,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Fear always springs from ignorance.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p033/s005",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 33,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Manlike let him turn and face it.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p033/s008",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 33,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The world is his who can see through its pretension.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p033/s010",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 33,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "And truly it demands something godlike in him who has cast off the common motives of humanity, and has ventured to trust himself for a taskmaster.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p033/s001",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 33,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "High be his heart, faithful his will, clear his sight, that he may in good earnest be doctrine, society, law, to himself, that a simple purpose may be to him as strong as iron necessity is to others!",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p033/s002",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 33,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "What deafness, what stone-blind custom, what overgrown error you behold is there only by sufferance,--by your sufferance.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p033/s011",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 33,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "See it to be a lie, and you have already dealt it its mortal blow.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p033/s012",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 33,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "It is only as a man puts off all foreign support, and stands alone, that I see him to be strong and to prevail.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p050/s014",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 50,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "He is weaker by every recruit to his banner.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p050/s015",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 50,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Is not a man better than a town?",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p050/s016",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 50,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "As the world was plastic and fluid in the hands of God, so it is ever to so much of his attributes as we bring to it.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p034/s003",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 34,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "He who knows that power is inborn, that he is weak because he has looked for good out of him and elsewhere, and so perceiving, throws himself unhesitatingly on his thought, instantly rights himself, stands in the erect position, commands his limbs, works miracles; just as a man who stands on his feet is stronger than a man who stands on his head.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p050/s018",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 50,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The great man makes the great thing.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p034/s008",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 34,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The day is always his who works in it with serenity and great aims.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p034/s011",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 34,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "In self-trust all the virtues are comprehended.",
+   "class": "VERBATIM",
+   "src": "emerson/the-american-scholar/p033/s001",
+   "work": "The American Scholar",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 33,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "Man's life is a progress, and not a station.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p047/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 47,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "His instinct is trust.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p047/s002",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 47,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "We must be our own before we can be another's.",
+   "class": "VERBATIM",
+   "src": "emerson/friendship/p019/s002",
+   "work": "Friendship",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 19,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Trust men and they will be true to you; treat them greatly and they will show themselves great, though they make an exception in your favor to all their rules of trade.",
+   "class": "VERBATIM",
+   "src": "emerson/prudence/p017/s008",
+   "work": "Prudence",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 17,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Welcome evermore to gods and men is the self-helping man.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p038/s007",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 38,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "And we are now men, and must accept in the highest mind the same transcendent destiny; and not minors and invalids in a protected corner, not cowards fleeing before a revolution, but guides, redeemers, and benefactors, obeying the Almighty effort, and advancing on Chaos and the Dark.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p004/s004",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  }
+ ]
+}

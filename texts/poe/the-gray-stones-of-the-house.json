@@ -1,0 +1,314 @@
+{
+ "author": "poe",
+ "author_name": "Edgar Allan Poe",
+ "kind": "story",
+ "title": "The Gray Stones of the House",
+ "theme": "a house that remembers",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 25,
+  "TWEAKED": 3,
+  "GLUE": 1,
+  "NEW": 0
+ },
+ "works": [
+  "Ligeia",
+  "Narrative of A. Gordon Pym",
+  "The Black Cat",
+  "The Fall of the House of Usher",
+  "The Murders in the Rue Morgue",
+  "The Tell-Tale Heart",
+  "William Wilson"
+ ],
+ "sentences": [
+  {
+   "text": "My immediate purpose is to place before the world, plainly, succinctly, and without comment, a series of mere household events.",
+   "class": "VERBATIM",
+   "src": "poe/the-black-cat/p001/s005",
+   "work": "The Black Cat",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148",
+   "pbreak": true
+  },
+  {
+   "text": "In their consequences, these events have terrified—have tortured—have destroyed me.",
+   "class": "VERBATIM",
+   "src": "poe/the-black-cat/p001/s006",
+   "work": "The Black Cat",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "Let me then remember.",
+   "class": "VERBATIM",
+   "src": "poe/william-wilson/p005/s004",
+   "work": "William Wilson",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "During the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House.",
+   "class": "TWEAKED",
+   "src": "poe/the-fall-of-the-house-of-usher/p001/s001",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "I know not how it was—but, with the first glimpse of the building, a sense of insufferable gloom pervaded my spirit.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p001/s002",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "I had so worked upon my imagination as really to believe that about the whole mansion and domain there hung an atmosphere peculiar to themselves and their immediate vicinity—an atmosphere which had no affinity with the air of heaven, but which had reeked up from the decayed trees, and the gray wall, and the silent tarn—a pestilent and mystic vapor, dull, sluggish, faintly discernible, and leaden-hued.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p004/s005",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "I rode over a short causeway to the house.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p006/s001",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 6,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148",
+   "pbreak": true
+  },
+  {
+   "text": "A servant in waiting took my horse, and I entered the Gothic archway of the hall.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p006/s002",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 6,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "A valet, of stealthy step, thence conducted me, in silence, through many dark and intricate passages in my progress to the studio of his master.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p006/s003",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 6,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "The ceiling, of gloomy-looking oak, was excessively lofty, vaulted, and elaborately fretted with the wildest and most grotesque specimens of a semi-Gothic, semi-Druidical device.",
+   "class": "VERBATIM",
+   "src": "poe/ligeia/p014/s007",
+   "work": "Ligeia",
+   "work_id": "pg2149",
+   "section": null,
+   "para": 14,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  },
+  {
+   "text": "From out the most central recess of this melancholy vaulting, depended, by a single chain of gold with long links, a huge censer of the same metal, Saracenic in pattern, and with many perforations so contrived that there writhed in and out of them, as if endued with a serpent vitality, a continual succession of parti-colored fires.",
+   "class": "VERBATIM",
+   "src": "poe/ligeia/p014/s008",
+   "work": "Ligeia",
+   "work_id": "pg2149",
+   "section": null,
+   "para": 14,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  },
+  {
+   "text": "While the objects around me—while the carvings of the ceilings, the sombre tapestries of the walls, the ebon blackness of the floors, and the phantasmagoric armorial trophies which rattled as I strode, were but matters to which, or to such as which, I had been accustomed from my infancy—while I hesitated not to acknowledge how familiar was all this—I still wondered to find how unfamiliar were the fancies which ordinary images were stirring up.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p006/s005",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 6,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "The valet now threw open a door and ushered me into the presence of his master.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p006/s009",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 6,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "I shall ever bear about me a memory of the many solemn hours I thus spent alone with the master of the House.",
+   "class": "TWEAKED",
+   "src": "poe/the-fall-of-the-house-of-usher/p016/s001",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 16,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148",
+   "pbreak": true
+  },
+  {
+   "text": "An excited and highly distempered ideality threw a sulphureous lustre over all.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p016/s003",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 16,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "One belief he maintained with a pertinacity I cannot forget.",
+   "class": "GLUE"
+  },
+  {
+   "text": "This opinion, in its general form, was that of the sentience of all vegetable things.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p019/s002",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 19,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "The belief, however, was connected (as I have previously hinted) with the gray stones of the home of his forefathers.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p019/s005",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 19,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "Its evidence—the evidence of the sentience—was to be seen, he said, (and I here started as he spoke,) in the gradual yet certain condensation of an atmosphere of their own about the waters and the walls.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p019/s007",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 19,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "I seemed to be upon the verge of comprehension without power to comprehend—as men, at times, find themselves upon the brink of remembrance without being able, in the end, to remember.",
+   "class": "VERBATIM",
+   "src": "poe/the-murders-in-the-rue-morgue/p080/s002",
+   "work": "The Murders in the Rue Morgue",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 80,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "The result was discoverable, he added, in that silent, yet importunate and terrible influence which for centuries had moulded the destinies of his family, and which made him what I now saw him—what he was.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p019/s008",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 19,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "It was, indeed, a tempestuous yet sternly beautiful night, and one wildly singular in its terror and its beauty.",
+   "class": "VERBATIM",
+   "src": "poe/the-fall-of-the-house-of-usher/p029/s002",
+   "work": "The Fall of the House of Usher",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 29,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148",
+   "pbreak": true
+  },
+  {
+   "text": "I had felt that some palpable although invisible object had passed lightly by my person; and I saw that there lay upon the golden carpet, in the very middle of the rich lustre thrown from the censer, a shadow—a faint, indefinite shadow of angelic aspect—such as might be fancied for the shadow of a shade.",
+   "class": "VERBATIM",
+   "src": "poe/ligeia/p018/s010",
+   "work": "Ligeia",
+   "work_id": "pg2149",
+   "section": null,
+   "para": 18,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  },
+  {
+   "text": "It was then that I became distinctly aware of a gentle footfall upon the carpet.",
+   "class": "TWEAKED",
+   "src": "poe/ligeia/p018/s014",
+   "work": "Ligeia",
+   "work_id": "pg2149",
+   "section": null,
+   "para": 18,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  },
+  {
+   "text": "I scarcely breathed.",
+   "class": "VERBATIM",
+   "src": "poe/the-tell-tale-heart/p011/s002",
+   "work": "The Tell-Tale Heart",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 11,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "And now at the dead hour of the night, amid the dreadful silence of that old house, so strange a noise as this excited me to uncontrollable terror.",
+   "class": "VERBATIM",
+   "src": "poe/the-tell-tale-heart/p011/s010",
+   "work": "The Tell-Tale Heart",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 11,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "I have said that I minutely remember the details of the chamber—yet I am sadly forgetful on topics of deep moment—and here there was no system, no keeping, in the fantastic display, to take hold upon the memory.",
+   "class": "VERBATIM",
+   "src": "poe/ligeia/p014/s003",
+   "work": "Ligeia",
+   "work_id": "pg2149",
+   "section": null,
+   "para": 14,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149",
+   "pbreak": true
+  },
+  {
+   "text": "The incidents are remembered, but not the feelings which the incidents elicited at the time of their occurrence.",
+   "class": "VERBATIM",
+   "src": "poe/narrative-of-a-gordon-pym/p186/s005",
+   "work": "Narrative of A. Gordon Pym",
+   "work_id": "pg2149",
+   "section": "Chapter 14",
+   "para": 186,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  },
+  {
+   "text": "I only know, that when they did occur, I then thought human nature could sustain nothing more of agony.",
+   "class": "VERBATIM",
+   "src": "poe/narrative-of-a-gordon-pym/p186/s006",
+   "work": "Narrative of A. Gordon Pym",
+   "work_id": "pg2149",
+   "section": "Chapter 14",
+   "para": 186,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  }
+ ]
+}

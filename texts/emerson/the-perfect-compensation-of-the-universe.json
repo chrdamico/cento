@@ -1,0 +1,585 @@
+{
+ "author": "emerson",
+ "author_name": "Ralph Waldo Emerson",
+ "kind": "essay",
+ "title": "The Perfect Compensation of the Universe",
+ "theme": "compensation",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 55,
+  "TWEAKED": 0,
+  "GLUE": 0,
+  "NEW": 0
+ },
+ "works": [
+  "Compensation",
+  "Gifts",
+  "Heroism",
+  "Nature",
+  "Self Reliance",
+  "Shakespeare; or, the Poet"
+ ],
+ "sentences": [
+  {
+   "text": "Ever since I was a boy, I have wished to write a discourse on Compensation: for it seemed to me when very young, that on this subject life was ahead of theology, and the people knew more than the preachers taught.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p001/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "I was lately confirmed in these desires by hearing a sermon at church.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p002/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The preacher, a man esteemed for his orthodoxy, unfolded in the ordinary manner the doctrine of the Last Judgment.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p002/s002",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "He assumed that judgment is not executed in this world; that the wicked are successful; that the good are miserable; and then urged from reason and from Scripture a compensation to be made to both parties in the next life.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p002/s003",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The fallacy lay in the immense concession that the bad are successful; that justice is not done now.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p004/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 4,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "But men are better than this theology.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p005/s003",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Their daily life gives it the lie.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p005/s004",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "For men are wiser than they know.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p005/s006",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "POLARITY, or action and reaction, we meet in every part of nature; in darkness and light; in heat and cold; in the ebb and flow of waters; in male and female; in the inspiration and expiration of plants and animals; in the equation of quantity and quality in the fluids of the animal body; in the systole and diastole of the heart; in the undulations of fluids, and of sound; in the centrifugal and centripetal gravity; in electricity, galvanism, and chemical affinity.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p007/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 7,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "An inevitable dualism bisects nature, so that each thing is a half, and suggests another thing to make it whole; as, spirit, matter; man, woman; odd, even; subjective, objective; in, out; upper, under; motion, rest; yea, nay.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p007/s005",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 7,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Whilst the world is thus dual, so is every one of its parts.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p008/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "In the animal kingdom the physiologist has observed that no creatures are favorites, but a certain compensation balances every gift and every defect.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p008/s005",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "A surplusage given to one part is paid out of a reduction from another part of the same creature.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p008/s006",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "What we gain in power is lost in time; and the converse.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p009/s002",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 9,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The same dualism underlies the nature and condition of man.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p010/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 10,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "Every excess causes a defect; every defect an excess.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p010/s002",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 10,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "For everything you have missed, you have gained something else; and for everything you gain, you lose something.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p010/s007",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 10,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Nature does not cocker us: we are children, not pets: she is not fond: everything is dealt to us without fear or favor, after severe universal laws.",
+   "class": "VERBATIM",
+   "src": "emerson/gifts/p001/s007",
+   "work": "Gifts",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Nature hates monopolies and exceptions.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p010/s010",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 10,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "There is always some leveling circumstance that puts down the overbearing, the strong, the rich, the fortunate, substantially on the same ground with all others.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p010/s012",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 10,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The farmer imagines power and place are fine things.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p011/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 11,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "But the President has paid dear for his White House.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p011/s002",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 11,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "It has commonly cost him all his peace, and the best of his many attributes.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p011/s003",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 11,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Every advantage has its tax.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p043/s004",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 43,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "He who by force of will or of thought, is great, and overlooks thousands, has the charges of that eminence.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p011/s007",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 11,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "With every influx of light comes new danger.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p011/s008",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 11,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Human labor, through all its forms, from the sharpening of a stake to the construction of a city or an epic, is one immense illustration of the perfect compensation of the universe.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p036/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 36,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "The absolute balance of Give and Take, the doctrine that everything has its price,--and if that price is not paid, not that thing but something else is obtained, and that it is impossible to get anything without its price,--is not less sublime in the columns of a ledger than in the budgets of states, in the laws of light and darkness, in all the action and reaction of nature.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p036/s002",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 36,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The greatest genius is the most indebted man.",
+   "class": "VERBATIM",
+   "src": "emerson/shakespeare-or-the-poet/p002/s005",
+   "work": "Shakespeare; or, the Poet",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Every master has found his materials collected, and his power lay in his sympathy with his people, and in his love of the materials he wrought in.",
+   "class": "VERBATIM",
+   "src": "emerson/shakespeare-or-the-poet/p003/s008",
+   "work": "Shakespeare; or, the Poet",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "What an economy of power! and what a compensation for the shortness of life!",
+   "class": "VERBATIM",
+   "src": "emerson/shakespeare-or-the-poet/p003/s009",
+   "work": "Shakespeare; or, the Poet",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The magnanimous know very well that they who give time, or money, or shelter, to the stranger--so it be done for love, and not for ostentation--do, as it were, put God under obligation to them, so perfect are the compensations of the universe.",
+   "class": "VERBATIM",
+   "src": "emerson/heroism/p020/s006",
+   "work": "Heroism",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 20,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "In some way the time they seem to lose is redeemed, and the pains they seem to take remunerate themselves.",
+   "class": "VERBATIM",
+   "src": "emerson/heroism/p020/s007",
+   "work": "Heroism",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 20,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "This law writes the laws of cities and nations.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p012/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 12,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "It is in vain to build or plot or combine against it.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p012/s002",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 12,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Things refuse to be mismanaged long.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p012/s003",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 12,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "But the drag is never taken from the wheel.",
+   "class": "VERBATIM",
+   "src": "emerson/nature/p016/s002",
+   "work": "Nature",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 16,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "We anticipate a new era from the invention of a locomotive, or a balloon; the new engine brings with it the old checks.",
+   "class": "VERBATIM",
+   "src": "emerson/nature/p016/s008",
+   "work": "Nature",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 16,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "They say that by electro-magnetism, your salad shall be grown from the seed whilst your fowl is roasting for dinner: it is a symbol of our modern aims and endeavors,--of our condensation and acceleration of objects: but nothing is gained: nature cannot be cheated: man's life is but seventy salads long, grow they swift or grow they slow.",
+   "class": "VERBATIM",
+   "src": "emerson/nature/p016/s009",
+   "work": "Nature",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 16,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Though no checks to a new evil appear, the checks exist, and will appear.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p012/s005",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 12,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Thus do all things preach the indifferency of circumstances.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p043/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 43,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "The man is all.",
+   "class": "FREE"
+  },
+  {
+   "text": "But the doctrine of compensation is not the doctrine of indifferency.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p043/s006",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 43,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "There is a deeper fact in the soul than compensation, to wit, its own nature.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p044/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 44,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The soul is not a compensation, but a life.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p044/s002",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 44,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "There is no tax on the good of virtue; for that is the incoming of God himself, or absolute existence without any comparative.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p047/s004",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 47,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Material good has its tax, and if it came without desert or sweat, has no root in me, and the next wind will blow it away.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p047/s005",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 47,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "I no longer wish to meet a good I do not earn; for example, to find a pot of buried gold, knowing that it brings with it new burdens.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p047/s007",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 47,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "A man is relieved and gay when he has put his heart into his work and done his best; but what he has said or done otherwise shall give him no peace.",
+   "class": "VERBATIM",
+   "src": "emerson/self-reliance/p003/s008",
+   "work": "Self Reliance",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The gain is apparent; the tax is certain.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p047/s009",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 47,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Herein I rejoice with a serene eternal peace.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p047/s011",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 47,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "And yet the compensations of calamity are made apparent to the understanding also, after long intervals of time.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p051/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 51,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643",
+   "pbreak": true
+  },
+  {
+   "text": "A fever, a mutilation, a cruel disappointment, a loss of wealth, a loss of friends, seems at the moment unpaid loss, and unpayable.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p051/s002",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 51,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "Man's life is a progress, and not a station.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p047/s001",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 47,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "The death of a dear friend, wife, brother, lover, which seemed nothing but privation, somewhat later assumes the aspect of a guide or genius; for it commonly operates revolutions in our way of life, terminates an epoch of infancy or of youth which was waiting to be closed, breaks up a wonted occupation, or a household, or style of living, and allows the formation of new ones more friendly to the growth of character.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p051/s004",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 51,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  },
+  {
+   "text": "It permits or constrains the formation of new acquaintances, and the reception of new influences that prove of the first importance to the next years; and the man or woman who would have remained a sunny garden flower, with no room for its roots and too much sunshine for its head, by the falling of the walls and the neglect of the gardener, is made the banyan of the forest, yielding shade and fruit to wide neighborhoods of men.",
+   "class": "VERBATIM",
+   "src": "emerson/compensation/p051/s005",
+   "work": "Compensation",
+   "work_id": "pg16643",
+   "section": null,
+   "para": 51,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/16643"
+  }
+ ]
+}

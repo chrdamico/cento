@@ -1,0 +1,237 @@
+{
+ "author": "poe",
+ "author_name": "Edgar Allan Poe",
+ "kind": "story",
+ "title": "A Night Upon the Ocean",
+ "theme": "the sea at night",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 21,
+  "TWEAKED": 0,
+  "GLUE": 0,
+  "NEW": 0
+ },
+ "works": [
+  "A Descent into the Maelstrom",
+  "MS. Found in a Bottle",
+  "Narrative of A. Gordon Pym",
+  "The Assignation"
+ ],
+ "sentences": [
+  {
+   "text": "It was a night of unusual gloom.",
+   "class": "VERBATIM",
+   "src": "poe/the-assignation/p003/s001",
+   "work": "The Assignation",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 3,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148",
+   "pbreak": true
+  },
+  {
+   "text": "My notice was soon afterwards attracted by the dusky-red appearance of the moon, and the peculiar character of the sea.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p005/s003",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "As night came on, every breath of wind died away, an more entire calm it is impossible to conceive.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p005/s007",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147",
+   "pbreak": true
+  },
+  {
+   "text": "The flame of a candle burned upon the poop without the least perceptible motion, and a long hair, held between the finger and thumb, hung without the possibility of detecting a vibration.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p005/s008",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "There were neither moon nor stars visible—and a short and ugly sea was running, although there was no great deal of wind.",
+   "class": "VERBATIM",
+   "src": "poe/narrative-of-a-gordon-pym/p052/s010",
+   "work": "Narrative of A. Gordon Pym",
+   "work_id": "pg2149",
+   "section": "Chapter 4",
+   "para": 52,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  },
+  {
+   "text": "I went below—not without a full presentiment of evil.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p005/s011",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "My uneasiness, however, prevented me from sleeping, and about midnight I went upon deck.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p005/s014",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "As night drew on, the wind increased in violence, with a remarkably heavy sea.",
+   "class": "VERBATIM",
+   "src": "poe/narrative-of-a-gordon-pym/p078/s006",
+   "work": "Narrative of A. Gordon Pym",
+   "work_id": "pg2149",
+   "section": "Chapter 7",
+   "para": 78,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149",
+   "pbreak": true
+  },
+  {
+   "text": "We scudded with frightful velocity before the sea, and the water made clear breaches over us.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p007/s010",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 7,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "Experience having taught us, however, the best method of arranging our lashings, we weathered this dreary night in tolerable security, although thoroughly drenched at almost every instant by the sea, and in momentary dread of being washed off.",
+   "class": "VERBATIM",
+   "src": "poe/narrative-of-a-gordon-pym/p162/s007",
+   "work": "Narrative of A. Gordon Pym",
+   "work_id": "pg2149",
+   "section": "Chapter 13",
+   "para": 162,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  },
+  {
+   "text": "Fortunately, the weather was so warm as to render the water rather grateful than otherwise.",
+   "class": "VERBATIM",
+   "src": "poe/narrative-of-a-gordon-pym/p162/s008",
+   "work": "Narrative of A. Gordon Pym",
+   "work_id": "pg2149",
+   "section": "Chapter 13",
+   "para": 162,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  },
+  {
+   "text": "Thenceforward we were enshrouded in patchy darkness, so that we could not have seen an object at twenty paces from the ship.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p008/s002",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147",
+   "pbreak": true
+  },
+  {
+   "text": "Eternal night continued to envelop us, all unrelieved by the phosphoric sea-brilliancy to which we had been accustomed in the tropics.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p008/s003",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "All around were horror, and thick gloom, and a black sweltering desert of ebony.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p008/s005",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "A panorama more deplorably desolate no human imagination can conceive.",
+   "class": "VERBATIM",
+   "src": "poe/a-descent-into-the-maelstrom/p006/s002",
+   "work": "A Descent into the Maelstrom",
+   "work_id": "pg2148",
+   "section": null,
+   "para": 6,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2148"
+  },
+  {
+   "text": "We had no means of calculating time, nor could we form any guess of our situation.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p008/s008",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "The swell surpassed anything I had imagined possible, and that we were not instantly buried is a miracle.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p008/s011",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "At times we gasped for breath at an elevation beyond the albatross—at times became dizzy with the velocity of our descent into some watery hell, where the air grew stagnant, and no sound disturbed the slumbers of the kraken.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p008/s013",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  },
+  {
+   "text": "By good fortune it continued very moderate during the night, the sea subsiding every minute, which gave us great hopes of ultimate preservation.",
+   "class": "VERBATIM",
+   "src": "poe/narrative-of-a-gordon-pym/p111/s005",
+   "work": "Narrative of A. Gordon Pym",
+   "work_id": "pg2149",
+   "section": "Chapter 9",
+   "para": 111,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149",
+   "pbreak": true
+  },
+  {
+   "text": "We sat close together, supporting each other with the aid of the broken ropes about the windlass, and devising methods of escape from our frightful situation.",
+   "class": "VERBATIM",
+   "src": "poe/narrative-of-a-gordon-pym/p111/s009",
+   "work": "Narrative of A. Gordon Pym",
+   "work_id": "pg2149",
+   "section": "Chapter 9",
+   "para": 111,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2149"
+  },
+  {
+   "text": "My own soul was wrapped up in silent wonder.",
+   "class": "VERBATIM",
+   "src": "poe/ms-found-in-a-bottle/p008/s006",
+   "work": "MS. Found in a Bottle",
+   "work_id": "pg2147",
+   "section": null,
+   "para": 8,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/2147"
+  }
+ ]
+}
