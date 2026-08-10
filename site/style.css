@@ -2,51 +2,11 @@
    every sentence must reveal its source on hover/focus, and glue must be
    visibly not-the-author's. */
 
-/* Theme: three states. Default follows the OS (prefers-color-scheme);
-   the header toggle stamps data-theme="dark"/"light" on <html>, which must
-   win in BOTH directions — hence the :not() guard on the media block and
-   the explicit [data-theme="dark"] block repeating the dark values. */
+/* Theme: dark is the site's default look, deliberately (not OS-driven);
+   the header toggle stamps data-theme="light" and localStorage remembers.
+   Both palettes are the validated dataviz categorical set, stepped per
+   surface — do not reorder or cycle the w-slots. */
 :root {
-  color-scheme: light;
-  --paper: #faf7f0;
-  --ink: #26221c;
-  --muted: #7a7264;
-  --rule: #ddd5c6;
-  --accent: #7c2d12;
-  --tip-bg: #26221c;
-  --tip-ink: #faf7f0;
-  /* seams view: validated categorical palette (dataviz reference order),
-     checked against --paper in both modes — do not reorder or cycle */
-  --w1: #2a78d6;
-  --w2: #eb6834;
-  --w3: #1baf7a;
-  --w4: #eda100;
-  --w5: #e87ba4;
-  --w6: #008300;
-  --w7: #4a3aa7;
-  --w8: #e34948;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --paper: #1c1a16;
-    --ink: #e8e2d5;
-    --muted: #948c7c;
-    --rule: #3a362e;
-    --accent: #e08a5a;
-    --tip-bg: #f0ead9;
-    --tip-ink: #26221c;
-    --w1: #3987e5;
-    --w2: #d95926;
-    --w3: #199e70;
-    --w4: #c98500;
-    --w5: #d55181;
-    --w6: #008300;
-    --w7: #9085e9;
-    --w8: #e66767;
-  }
-}
-:root[data-theme="dark"] {
   color-scheme: dark;
   --paper: #1c1a16;
   --ink: #e8e2d5;
@@ -63,6 +23,24 @@
   --w6: #008300;
   --w7: #9085e9;
   --w8: #e66767;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --paper: #faf7f0;
+  --ink: #26221c;
+  --muted: #7a7264;
+  --rule: #ddd5c6;
+  --accent: #7c2d12;
+  --tip-bg: #26221c;
+  --tip-ink: #faf7f0;
+  --w1: #2a78d6;
+  --w2: #eb6834;
+  --w3: #1baf7a;
+  --w4: #eda100;
+  --w5: #e87ba4;
+  --w6: #008300;
+  --w7: #4a3aa7;
+  --w8: #e34948;
 }
 
 * { box-sizing: border-box; }

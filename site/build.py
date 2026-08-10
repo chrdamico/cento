@@ -75,8 +75,7 @@ document.addEventListener("click", function (e) {
 (function () {
   var btn = document.getElementById("theme");
   function eff() {
-    return document.documentElement.getAttribute("data-theme") ||
-      (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    return document.documentElement.getAttribute("data-theme") || "dark";
   }
   function paint() { btn.textContent = eff() === "dark" ? "\\u2600" : "\\u263e"; }
   btn.addEventListener("click", function () {
