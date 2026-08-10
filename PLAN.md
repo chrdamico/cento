@@ -218,7 +218,9 @@ nothing else must still leave knowing this is arrangement, not imitation.
 ### Phase 5 — later (not v1)
 Daily generation timer (systemd user unit, pattern in blog-pipeline
 `watcher/`), more authors, a curator that judges each author's pool *as a set*
-(port `prompts/curate.md`), theme rotation, public deployment — **GitHub Pages,
+(port `prompts/curate.md`; the curator runs on **Opus** — `CURATOR_MODEL`,
+default `claude-opus-5` — stitching keeps Fable), theme rotation, public
+deployment — **GitHub Pages,
 free**: the site is static files, `corpus/` never leaves the laptop, generation
 stays local on the timer (subscription `claude -p` doesn't transplant to CI
 without an API key) and each pushed text redeploys the site — plus
@@ -231,7 +233,7 @@ the *translation* must be PD, not just the author).
 `VERBATIM_MIN` (85) · `GLUE_MAX_WORDS` (12) · `EXCERPT_MAX_RUN` (3, consecutive
 sentences from one paragraph) · `MIN_WORKS` (2 story / 3 essay) ·
 `WORKINGSET_MAX` (100000 chars) · `CLAUDE_BIN` / `CLAUDE_MODEL`
-(claude-fable-5) · `ATTEMPTS` (3).
+(claude-fable-5) · `CURATOR_MODEL` (claude-opus-5, Phase 5) · `ATTEMPTS` (3).
 
 ## Known risks, stated up front
 
