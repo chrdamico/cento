@@ -111,7 +111,8 @@ def page(title, body, css_prefix="", head=""):
 <header class="site">
 <div class="inner">
 <a class="wordmark" href="{css_prefix}index.html">cento</a>
-<nav><a href="{css_prefix}about.html">about</a></nav>
+<nav><a href="{css_prefix}archive.html">archive</a>
+<a href="{css_prefix}about.html">about</a></nav>
 </div>
 </header>
 <main>
@@ -252,6 +253,54 @@ page to visit).</p>
     return page(f"about — {SITE_NAME}", body, "", head)
 
 
+# The search is a client-side filter over data the page already carries —
+# static site, no backend, so this is the whole implementation.
+ARCHIVE_JS = """<script>
+var q = document.getElementById("q");
+q.addEventListener("input", function () {
+  var needle = q.value.trim().toLowerCase();
+  var shown = 0;
+  document.querySelectorAll("#pieces > li").forEach(function (li) {
+    var hit = !needle || li.getAttribute("data-search").indexOf(needle) >= 0;
+    li.hidden = !hit;
+    if (hit) shown++;
+  });
+  document.getElementById("count").textContent =
+    shown + (shown === 1 ? " piece" : " pieces");
+});
+</script>"""
+
+
+def archive_page(all_texts, has_card):
+    items = []
+    for author, slug, rec in sorted(all_texts,
+                                    key=lambda t: (t[2]["created"], t[1]),
+                                    reverse=True):
+        haystack = " ".join([rec["title"], rec["author_name"], rec["kind"],
+                             rec["created"], rec.get("theme", "")]
+                            + rec["works"]).lower()
+        items.append(
+            f'<li data-search="{esc(haystack)}">'
+            f'<a href="{esc(author)}/{esc(slug)}.html">{esc(rec["title"])}</a>'
+            f'<span class="meta">{esc(rec["author_name"])} &middot; '
+            f'{esc(rec["kind"])} &middot; gathered from {len(rec["works"])} '
+            f'works &middot; {esc(rec["created"])}</span></li>')
+    n = len(items)
+    body = f"""<h1 class="piece-title">archive</h1>
+<input type="search" id="q" class="search" autocomplete="off"
+ placeholder="search titles, authors, works, themes&hellip;">
+<p class="meta" id="count">{n} piece{"s" if n != 1 else ""}</p>
+<ul class="texts" id="pieces">
+{chr(10).join(items)}
+</ul>
+{ARCHIVE_JS}
+"""
+    head = head_meta(f"archive — {SITE_NAME}",
+                     "Every piece on the site: all authors, all dates.",
+                     "archive.html", has_card)
+    return page(f"archive — {SITE_NAME}", body, "", head)
+
+
 def index_page(cfg, by_author, latest, has_card):
     latest_html = ""
     if latest:
@@ -367,6 +416,8 @@ def main():
         f.write(index_page(cfg, by_author, latest, has_card))
     with open(os.path.join(OUT, "about.html"), "w", encoding="utf-8") as f:
         f.write(about_page(has_card))
+    with open(os.path.join(OUT, "archive.html"), "w", encoding="utf-8") as f:
+        f.write(archive_page(all_texts, has_card))
     with open(os.path.join(OUT, "feed.xml"), "w", encoding="utf-8") as f:
         f.write(atom_feed(all_texts))
     n = 0
