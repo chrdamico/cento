@@ -71,6 +71,31 @@ document.addEventListener("click", function (e) {
   var s = e.target.closest && e.target.closest(".s");
   if (s && document.activeElement !== s) s.focus({ preventScroll: true });
 });
+(function () {
+  var btn = document.getElementById("theme");
+  function eff() {
+    return document.documentElement.getAttribute("data-theme") ||
+      (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }
+  function paint() { btn.textContent = eff() === "dark" ? "\\u2600" : "\\u263e"; }
+  btn.addEventListener("click", function () {
+    var next = eff() === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    paint();
+  });
+  paint();
+})();
+</script>"""
+
+# Runs before first paint (in <head>) so a remembered theme never flashes.
+THEME_INIT = """<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem("theme"); } catch (e) {}
+  if (t === "dark" || t === "light")
+    document.documentElement.setAttribute("data-theme", t);
+})();
 </script>"""
 
 
@@ -108,11 +133,14 @@ def page(title, body, css_prefix="", head=""):
 {head}
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="{css_prefix}style.css">
+{THEME_INIT}
 <header class="site">
 <div class="inner">
 <a class="wordmark" href="{css_prefix}index.html">cento</a>
 <nav><a href="{css_prefix}archive.html">archive</a>
-<a href="{css_prefix}about.html">about</a></nav>
+<a href="{css_prefix}about.html">about</a>
+<button id="theme" class="theme" title="toggle dark mode"
+ aria-label="toggle dark mode"></button></nav>
 </div>
 </header>
 <main>
