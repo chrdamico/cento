@@ -1,0 +1,249 @@
+{
+ "author": "whitman",
+ "author_name": "Walt Whitman",
+ "kind": "poem",
+ "title": "The Long Brown Path",
+ "theme": "the open road",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 22,
+  "TWEAKED": 0,
+  "GLUE": 0,
+  "NEW": 0
+ },
+ "works": [
+  "A March in the Ranks Hard-Prest, and the Road Unknown",
+  "Adieu to a Soldier",
+  "Out from Behind This Mask [To Confront a Portrait]",
+  "Pioneers! O Pioneers!",
+  "Song of Myself",
+  "Song of the Open Road"
+ ],
+ "sentences": [
+  {
+   "text": "Afoot and light-hearted I take to the open road,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p001/s001",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§1",
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "Healthy, free, the world before me,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p001/s002",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§1",
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "The long brown path before me leading wherever I choose.",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p001/s003",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§1",
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Henceforth I ask not good-fortune, I myself am good-fortune,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p002/s001",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§1",
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "Strong and content I travel the open road.",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p002/s004",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§1",
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "You road I enter upon and look around, I believe you are not all that is here,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p005/s001",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§2",
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "I believe that much unseen is also here.",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p005/s002",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§2",
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "I tramp a perpetual journey, (come listen all!)",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p308/s001",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§46",
+   "para": 308,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "My signs are a rain-proof coat, good shoes, and a staff cut from the woods,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p308/s002",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§46",
+   "para": 308,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Along the ruts of the turnpike, along the dry gulch and rivulet bed,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p191/s002",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§33",
+   "para": 191,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Walking the path worn in the grass and beat through the leaves of the brush,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p191/s016",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§33",
+   "para": 191,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "I tread day and night such roads.",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p191/s081",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§33",
+   "para": 191,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Was the road of late so toilsome? did we stop discouraged nodding on our way?",
+   "class": "VERBATIM",
+   "src": "whitman/pioneers-o-pioneers/p025/s002",
+   "work": "Pioneers! O Pioneers!",
+   "work_id": "pg1322",
+   "section": null,
+   "para": 25,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "Through untried roads with ambushes opponents lined,",
+   "class": "VERBATIM",
+   "src": "whitman/adieu-to-a-soldier/p002/s005",
+   "work": "Adieu to a Soldier",
+   "work_id": "pg1322",
+   "section": null,
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Resuming, marching, ever in darkness marching, on in the ranks,",
+   "class": "VERBATIM",
+   "src": "whitman/a-march-in-the-ranks-hard-prest-and-the-road-unk/p001/s024",
+   "work": "A March in the Ranks Hard-Prest, and the Road Unknown",
+   "work_id": "pg1322",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "The unknown road still marching.",
+   "class": "VERBATIM",
+   "src": "whitman/a-march-in-the-ranks-hard-prest-and-the-road-unk/p001/s025",
+   "work": "A March in the Ranks Hard-Prest, and the Road Unknown",
+   "work_id": "pg1322",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Not I, not any one else can travel that road for you,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p309/s001",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§46",
+   "para": 309,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "You must travel it for yourself.",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p309/s002",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§46",
+   "para": 309,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Allons! the road is before us!",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p050/s001",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§15",
+   "para": 50,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "It is safe--I have tried it--my own feet have tried it well--be not detain’d!",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p050/s002",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§15",
+   "para": 50,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "To know the universe itself as a road, as many roads, as roads for traveling souls.",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-the-open-road/p039/s015",
+   "work": "Song of the Open Road",
+   "work_id": "pg1322",
+   "section": "§13",
+   "para": 39,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Then travel travel on.",
+   "class": "VERBATIM",
+   "src": "whitman/out-from-behind-this-mask-to-confront-a-portrait/p002/s009",
+   "work": "Out from Behind This Mask [To Confront a Portrait]",
+   "work_id": "pg1322",
+   "section": "§2",
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  }
+ ]
+}

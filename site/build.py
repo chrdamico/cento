@@ -338,12 +338,12 @@ def archive_page(all_texts, has_card):
     return page(f"archive — {SITE_NAME}", body, "", head)
 
 
-def index_page(cfg, by_author, latest, has_card):
+def index_page(cfg, by_author, latest, has_card, label="the latest piece"):
     latest_html = ""
     if latest:
         author, slug, rec = latest
         latest_html = (
-            '<p class="latest-label">the latest piece</p>\n'
+            f'<p class="latest-label">{esc(label)}</p>\n'
             + piece_block(rec, "about.html",
                           f"{esc(author)}/{esc(slug)}.html", heading="h1",
                           prov_href=f"{esc(author)}/{esc(slug)}.json")
@@ -445,6 +445,20 @@ def main():
 
     latest = max(all_texts, key=lambda t: (t[2]["created"], t[1]),
                  default=None)
+    # site/featured ("author/slug") pins a chosen piece to the top of the
+    # index; without it the newest piece leads
+    label = "the latest piece"
+    featured_path = os.path.join(SITE, "featured")
+    if os.path.exists(featured_path):
+        with open(featured_path, encoding="utf-8") as f:
+            ref = f.read().strip()
+        for t in all_texts:
+            if f"{t[0]}/{t[1]}" == ref:
+                latest, label = t, "featured"
+                break
+        else:
+            print(f"site: WARNING featured piece '{ref}' not found; "
+                  f"leading with the latest instead")
     card_src = os.path.join(SITE, "card.png")
     has_card = os.path.exists(card_src)
 
@@ -454,7 +468,7 @@ def main():
     if has_card:
         shutil.copy(card_src, OUT)
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
-        f.write(index_page(cfg, by_author, latest, has_card))
+        f.write(index_page(cfg, by_author, latest, has_card, label))
     with open(os.path.join(OUT, "about.html"), "w", encoding="utf-8") as f:
         f.write(about_page(has_card))
     with open(os.path.join(OUT, "archive.html"), "w", encoding="utf-8") as f:

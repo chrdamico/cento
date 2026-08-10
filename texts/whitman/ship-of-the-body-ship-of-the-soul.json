@@ -1,0 +1,294 @@
+{
+ "author": "whitman",
+ "author_name": "Walt Whitman",
+ "kind": "poem",
+ "title": "Ship of the Body, Ship of the Soul",
+ "theme": "the body and the soul",
+ "created": "2026-08-10",
+ "gate": {
+  "VERBATIM": 26,
+  "TWEAKED": 0,
+  "GLUE": 0,
+  "NEW": 0
+ },
+ "works": [
+  "A Song for Occupations",
+  "A Song of Joys",
+  "Aboard at a Ship’s Helm",
+  "Crossing Brooklyn Ferry",
+  "Darest Thou Now O Soul",
+  "I Sing the Body Electric",
+  "Song of Myself",
+  "Starting from Paumanok",
+  "When Lilacs Last in the Dooryard Bloom’d"
+ ],
+ "sentences": [
+  {
+   "text": "I sing the body electric,",
+   "class": "VERBATIM",
+   "src": "whitman/i-sing-the-body-electric/p001/s001",
+   "work": "I Sing the Body Electric",
+   "work_id": "pg1322",
+   "section": "§1",
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "I loafe and invite my soul,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p002/s001",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§1",
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "I am the poet of the Body and I am the poet of the Soul,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p108/s001",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§21",
+   "para": 108,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Clear and sweet is my soul, and clear and sweet is all that is not my soul.",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p016/s001",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§3",
+   "para": 16,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "And if the body does not do fully as much as the soul?",
+   "class": "VERBATIM",
+   "src": "whitman/i-sing-the-body-electric/p002/s003",
+   "work": "I Sing the Body Electric",
+   "work_id": "pg1322",
+   "section": "§1",
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "And if the body were not the soul, what is the soul?",
+   "class": "VERBATIM",
+   "src": "whitman/i-sing-the-body-electric/p002/s004",
+   "work": "I Sing the Body Electric",
+   "work_id": "pg1322",
+   "section": "§1",
+   "para": 2,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "I have said that the soul is not more than the body,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p327/s001",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§48",
+   "para": 327,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "And I have said that the body is not more than the soul,",
+   "class": "VERBATIM",
+   "src": "whitman/song-of-myself/p327/s002",
+   "work": "Song of Myself",
+   "work_id": "pg1322",
+   "section": "§48",
+   "para": 327,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "If any thing is sacred the human body is sacred,",
+   "class": "VERBATIM",
+   "src": "whitman/i-sing-the-body-electric/p029/s001",
+   "work": "I Sing the Body Electric",
+   "work_id": "pg1322",
+   "section": "§8",
+   "para": 29,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "Behold, the body includes and is the meaning, the main concern and includes and is the soul;",
+   "class": "VERBATIM",
+   "src": "whitman/starting-from-paumanok/p046/s001",
+   "work": "Starting from Paumanok",
+   "work_id": "pg1322",
+   "section": "§13",
+   "para": 46,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Whoever you are, how superb and how divine is your body, or any part of it!",
+   "class": "VERBATIM",
+   "src": "whitman/starting-from-paumanok/p046/s002",
+   "work": "Starting from Paumanok",
+   "work_id": "pg1322",
+   "section": "§13",
+   "para": 46,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Strange and hard that paradox true I give,",
+   "class": "VERBATIM",
+   "src": "whitman/a-song-for-occupations/p026/s001",
+   "work": "A Song for Occupations",
+   "work_id": "pg1322",
+   "section": "§5",
+   "para": 26,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Objects gross and the unseen soul are one.",
+   "class": "VERBATIM",
+   "src": "whitman/a-song-for-occupations/p026/s002",
+   "work": "A Song for Occupations",
+   "work_id": "pg1322",
+   "section": "§5",
+   "para": 26,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "I too had been struck from the float forever held in solution,",
+   "class": "VERBATIM",
+   "src": "whitman/crossing-brooklyn-ferry/p009/s007",
+   "work": "Crossing Brooklyn Ferry",
+   "work_id": "pg1322",
+   "section": "§5",
+   "para": 9,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "I too had receiv’d identity by my body,",
+   "class": "VERBATIM",
+   "src": "whitman/crossing-brooklyn-ferry/p009/s008",
+   "work": "Crossing Brooklyn Ferry",
+   "work_id": "pg1322",
+   "section": "§5",
+   "para": 9,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "That I was I knew was of my body, and what I should be I knew I should be of my body.",
+   "class": "VERBATIM",
+   "src": "whitman/crossing-brooklyn-ferry/p009/s009",
+   "work": "Crossing Brooklyn Ferry",
+   "work_id": "pg1322",
+   "section": "§5",
+   "para": 9,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "O my body! I dare not desert the likes of you in other men and women, nor the likes of the parts of you,",
+   "class": "VERBATIM",
+   "src": "whitman/i-sing-the-body-electric/p031/s001",
+   "work": "I Sing the Body Electric",
+   "work_id": "pg1322",
+   "section": "§9",
+   "para": 31,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "I believe the likes of you are to stand or fall with the likes of the soul, (and that they are the soul,)",
+   "class": "VERBATIM",
+   "src": "whitman/i-sing-the-body-electric/p031/s002",
+   "work": "I Sing the Body Electric",
+   "work_id": "pg1322",
+   "section": "§9",
+   "para": 31,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "My real body doubtless left to me for other spheres,",
+   "class": "VERBATIM",
+   "src": "whitman/a-song-of-joys/p034/s004",
+   "work": "A Song of Joys",
+   "work_id": "pg1322",
+   "section": null,
+   "para": 34,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Item for item it will elude the hands of the corpse-cleaners and pass to fitting spheres,",
+   "class": "VERBATIM",
+   "src": "whitman/starting-from-paumanok/p044/s002",
+   "work": "Starting from Paumanok",
+   "work_id": "pg1322",
+   "section": "§13",
+   "para": 44,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Carrying what has accrued to it from the moment of birth to the moment of death.",
+   "class": "VERBATIM",
+   "src": "whitman/starting-from-paumanok/p044/s003",
+   "work": "Starting from Paumanok",
+   "work_id": "pg1322",
+   "section": "§13",
+   "para": 44,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "And the soul turning to thee O vast and well-veil’d death,",
+   "class": "VERBATIM",
+   "src": "whitman/when-lilacs-last-in-the-dooryard-bloom-d/p032/s003",
+   "work": "When Lilacs Last in the Dooryard Bloom’d",
+   "work_id": "pg1322",
+   "section": "§14",
+   "para": 32,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "And the body gratefully nestling close to thee.",
+   "class": "VERBATIM",
+   "src": "whitman/when-lilacs-last-in-the-dooryard-bloom-d/p032/s004",
+   "work": "When Lilacs Last in the Dooryard Bloom’d",
+   "work_id": "pg1322",
+   "section": "§14",
+   "para": 32,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Darest thou now O soul,",
+   "class": "VERBATIM",
+   "src": "whitman/darest-thou-now-o-soul/p001/s001",
+   "work": "Darest Thou Now O Soul",
+   "work_id": "pg1322",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322",
+   "pbreak": true
+  },
+  {
+   "text": "Walk out with me toward the unknown region,",
+   "class": "VERBATIM",
+   "src": "whitman/darest-thou-now-o-soul/p001/s002",
+   "work": "Darest Thou Now O Soul",
+   "work_id": "pg1322",
+   "section": null,
+   "para": 1,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  },
+  {
+   "text": "Ship of the body, ship of the soul, voyaging, voyaging, voyaging.",
+   "class": "VERBATIM",
+   "src": "whitman/aboard-at-a-ship-s-helm/p005/s002",
+   "work": "Aboard at a Ship’s Helm",
+   "work_id": "pg1322",
+   "section": null,
+   "para": 5,
+   "gutenberg_url": "https://www.gutenberg.org/ebooks/1322"
+  }
+ ]
+}
