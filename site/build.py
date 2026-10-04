@@ -92,7 +92,14 @@ document.addEventListener("click", function (e) {
 THEME_INIT = """<script>
 (function () {
   var t = null;
-  try { t = localStorage.getItem("cento:theme"); } catch (e) {}
+  try {
+    t = localStorage.getItem("cento:theme");
+    if (t === null) {
+      t = localStorage.getItem("theme");
+      if (t === "dark" || t === "light") localStorage.setItem("cento:theme", t);
+      localStorage.removeItem("theme");
+    }
+  } catch (e) {}
   if (t === "dark" || t === "light")
     document.documentElement.setAttribute("data-theme", t);
 })();
