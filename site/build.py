@@ -81,7 +81,7 @@ document.addEventListener("click", function (e) {
   btn.addEventListener("click", function () {
     var next = eff() === "dark" ? "light" : "dark";
     document.documentElement.setAttribute("data-theme", next);
-    try { localStorage.setItem("theme", next); } catch (e) {}
+    try { localStorage.setItem("cento:theme", next); } catch (e) {}
     paint();
   });
   paint();
@@ -92,7 +92,7 @@ document.addEventListener("click", function (e) {
 THEME_INIT = """<script>
 (function () {
   var t = null;
-  try { t = localStorage.getItem("theme"); } catch (e) {}
+  try { t = localStorage.getItem("cento:theme"); } catch (e) {}
   if (t === "dark" || t === "light")
     document.documentElement.setAttribute("data-theme", t);
 })();
